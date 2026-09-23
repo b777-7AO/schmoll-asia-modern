@@ -1,0 +1,295 @@
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap" rel="stylesheet">
+<style>#sap-media{--red:#C11819;--red-dark:#9d1314;--blue:#2C55A3;--g900:#333333;--g700:#4D4D4D;--g600:#5f6060;--g500:#7F8080;--g200:#E5E5E5;--g100:#F2F2F2;--gutter:clamp(20px,5vw,80px);--disp:"Jost","Roboto","Helvetica Neue",Arial,sans-serif;--body:"Roboto Slab",Georgia,serif;font-family:var(--body);color:var(--g900);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:clamp(40px,6vw,80px)}
+#sap-media *,#sap-media *::before,#sap-media *::after{box-sizing:border-box}
+#sap-media a{color:inherit;text-decoration:none}
+#sap-media img{max-width:100%;height:auto;display:block}
+#sap-media h1,#sap-media h2{font-family:var(--disp);font-weight:600;text-transform:uppercase;letter-spacing:.01em;margin:0;color:var(--g900)}
+#sap-media .sm-container{max-width:1240px;margin:0 auto;padding:0 var(--gutter)}
+#sap-media .sm-head{padding:clamp(40px,6vw,80px) 0 clamp(26px,3vw,44px)}
+#sap-media .sm-head h1{font-size:clamp(3rem,7vw,5.6rem);line-height:.95;position:relative;display:inline-block}
+#sap-media .sm-head h1::after{content:"";position:absolute;left:3px;bottom:-14px;width:56px;height:4px;background:var(--red)}
+#sap-media .sm-head p{margin:30px 0 0;font-size:.98rem;color:var(--g600);max-width:52ch}
+#sap-media .sm-row{padding:clamp(26px,3.5vw,46px) 0 clamp(18px,2.5vw,30px)}
+#sap-media .sm-row__h{font-size:clamp(1.15rem,1.8vw,1.55rem);margin-bottom:20px}
+#sap-media .sm-row__wrap{position:relative}
+#sap-media .sm-row__slider{display:flex;gap:16px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none;scroll-behavior:smooth}
+#sap-media .sm-row__slider::-webkit-scrollbar{display:none}
+#sap-media .sm-row__next,#sap-media .sm-row__prev{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:46px;height:46px;display:grid;place-items:center;background:var(--red);color:#fff;border:0;padding:0;cursor:pointer;transition:background .2s,opacity .25s,visibility .25s}
+#sap-media .sm-row__next{right:var(--gutter);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+#sap-media .sm-row__prev{left:var(--gutter);clip-path:polygon(12px 0,100% 0,100% 100%,0 100%,0 12px)}
+#sap-media .sm-row__next::after{content:"";position:absolute;right:100%;top:-30px;bottom:-30px;width:70px;background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,.9));pointer-events:none}
+#sap-media .sm-row__prev::after{content:"";position:absolute;left:100%;top:-30px;bottom:-30px;width:70px;background:linear-gradient(to left,rgba(255,255,255,0),rgba(255,255,255,.9));pointer-events:none}
+#sap-media .sm-row__next:hover,#sap-media .sm-row__prev:hover{background:var(--red-dark)}
+#sap-media .sm-row__next:focus-visible,#sap-media .sm-row__prev:focus-visible,#sap-media .sm-panel:focus-visible,#sap-media .sm-vtile__img:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+#sap-media .is-hidden{opacity:0;visibility:hidden}
+#sap-media .sm-panel{flex:0 0 clamp(270px,24vw,360px);display:flex;flex-direction:column;background:var(--g100);color:var(--g900);padding:0;min-height:0;overflow:hidden;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);transition:background .3s ease-out,color .3s ease-out}
+#sap-media .sm-panel:hover{background:var(--red);color:#fff}
+#sap-media .sm-panel--img>img{width:100%;aspect-ratio:16/9;object-fit:cover}
+#sap-media .sm-panel__inner{display:flex;flex-direction:column;padding:16px 20px 20px;flex:1}
+#sap-media .sm-panel__head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-family:var(--disp);font-weight:600;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--red);transition:color .2s}
+#sap-media .sm-panel__head svg{vertical-align:-1px}
+#sap-media .sm-panel:hover .sm-panel__head{color:#fff}
+#sap-media .sm-panel__title{margin-top:12px;font-family:var(--disp);font-weight:600;font-size:.95rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#sap-media .sm-panel__more{margin-top:auto;padding-top:16px;font-family:var(--disp);font-weight:600;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase}
+#sap-media .sm-panel__more [aria-hidden]{color:var(--red);transition:color .2s}
+#sap-media .sm-panel:hover .sm-panel__more [aria-hidden]{color:#fff}
+#sap-media .sm-row--diary .sm-panel{background:var(--g200)}
+#sap-media .sm-row--diary .sm-panel:hover{background:var(--red)}
+#sap-media .sm-panel--follow{align-items:center;justify-content:center;text-align:center;gap:12px;background:var(--g200);padding:24px 26px;min-height:230px}
+#sap-media .sm-panel--follow .sm-panel__title{margin:0;text-transform:uppercase;font-size:1.05rem}
+#sap-media .sm-panel--follow .sm-panel__more{margin:0;padding:0;font-size:1.2rem}
+#sap-media .sm-vtile{flex:0 0 clamp(300px,30vw,440px);display:flex;flex-direction:column;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);overflow:hidden;background:var(--g100)}
+#sap-media .sm-vtile__img{position:relative;display:block;padding:0;border:0;background:#000;cursor:pointer;width:100%}
+#sap-media .sm-vtile__img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+#sap-media .sm-vtile__play{position:absolute;inset:0;display:grid;place-items:center;color:#fff}
+#sap-media .sm-vtile__play::before{content:"";position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(10,10,10,.55);border:1px solid rgba(255,255,255,.45);transition:background .2s}
+#sap-media .sm-vtile__img:hover .sm-vtile__play::before{background:var(--red);border-color:var(--red)}
+#sap-media .sm-vtile__play svg{position:relative}
+#sap-media .sm-vtile video{width:100%;aspect-ratio:16/9;display:block;background:#000}
+#sap-media .sm-vtile__cap{padding:14px 18px;font-family:var(--disp);font-weight:600;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--g900);transition:background .25s,color .25s}
+#sap-media .sm-vtile:hover .sm-vtile__cap{background:var(--red);color:#fff}
+#sap-media .sm-cta{padding-top:clamp(40px,6vw,80px)}
+#sap-media .sm-cta__in{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;border-top:1px solid var(--g200);padding-top:clamp(28px,4vw,48px)}
+#sap-media .sm-cta h2{font-size:clamp(1.2rem,2vw,1.6rem);text-transform:none;letter-spacing:0}
+#sap-media .sm-cta p{margin:10px 0 0;color:var(--g600);font-size:.95rem;max-width:56ch}
+#sap-media .sm-cta__actions{display:flex;gap:12px;flex-wrap:wrap}
+#sap-media .sm-btn{display:inline-flex;align-items:center;padding:14px 26px;background:var(--red);color:#fff;font-family:var(--disp);font-weight:600;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%);transition:background .2s}
+#sap-media .sm-btn:hover{background:var(--red-dark);color:#fff}
+#sap-media .sm-btn--ghost{background:var(--g900)}
+#sap-media .sm-btn--ghost:hover{background:#000}
+@media (max-width:700px){#sap-media .sm-panel{flex-basis:82vw}#sap-media .sm-vtile{flex-basis:86vw}#sap-media .sm-cta__in{flex-direction:column;align-items:flex-start}}
+@media (prefers-reduced-motion:reduce){#sap-media *{transition-duration:.001ms!important}#sap-media .sm-row__slider{scroll-behavior:auto}}
+</style>
+<div id="sap-media" lang="en" data-lang="en" data-li-base="https://b777-7ao.github.io/schmoll-asia-modern" data-li-alt="https://raw.githubusercontent.com/b777-7AO/schmoll-asia-modern/main/site" data-li-view="View post" data-li-follow="Follow Schmoll Asia Pacific" data-li-source="https://www.linkedin.com/company/schmoll-asia-pacific">
+<header class="sm-head"><div class="sm-container">
+  <h1>Media</h1>
+  <p>Stories, technologies and people shaping advanced PCB manufacturing across Asia Pacific.</p>
+</div></header>
+
+<section class="sm-row" id="news">
+  <div class="sm-container"><h2 class="sm-row__h">News &amp; Events</h2></div>
+  <div class="sm-container sm-row__wrap">
+    <div class="sm-row__slider">
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/schmoll-asia-pacific-team-building/">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7467579139282145280-0.jpg" alt="Schmoll Asia Pacific employees forming the letters SAP on a basketball court, seen from above" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-06-02">02 Jun 2026</time><span>Company Life</span></span>
+    <span class="sm-panel__title">Team building across Schmoll Asia Pacific</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/cpca-show-2026-best-pcb-equipment-for-ai-data-servers/">
+  <img src="https://i0.wp.com/www.schmoll-asia.com/wp-content/uploads/2026/04/CPCA2026-March_Group-scaled.jpg?resize=640,360&ssl=1" alt="Schmoll Asia Pacific team at the CPCA Show 2026 exhibition booth in Shanghai" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-04-06">06 Apr 2026</time><span>Event</span></span>
+    <span class="sm-panel__title">PCB equipment for the AI data-server era</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/schmoll-asia-pacific-wins-golden-supplier-award-at-founder-pcb-supplier-conference/">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/facility-2.jpg" alt="Schmoll machine installed at a customer facility" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2025-01-16">16 Jan 2025</time><span>News</span></span>
+    <span class="sm-panel__title">Golden Supplier Award at the Founder PCB Supplier Conference</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/wus-printed-circuits-expansion-powered-by-schmoll-asia-pacifics-cutting-edge-technology/">
+  <img src="https://i0.wp.com/www.schmoll-asia.com/wp-content/uploads/2024/07/Screenshot-2024-08-07-at-13.39.15-min-scaled.jpg?resize=640,360&ssl=1" alt="Schmoll drilling machines installed in a WUS Printed Circuit production line" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2024-08-07">07 Aug 2024</time><span>News</span></span>
+    <span class="sm-panel__title">WUS Printed Circuit expands with Schmoll technology</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/celebrating-a-strong-partnership-larry-gao-2/">
+  <img src="https://i0.wp.com/www.schmoll-asia.com/wp-content/uploads/2024/07/WechatIMG29-2-e1719822512279.jpg?resize=640,360&ssl=1" alt="Drift car sponsored by Schmoll driven by Larry Gao" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2024-07-01">01 Jul 2024</time><span>Company Life</span></span>
+    <span class="sm-panel__title">Partnership story: Larry Gao</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/schmoll-asia-pacific-new-website/">
+  <img src="https://i0.wp.com/www.schmoll-asia.com/wp-content/uploads/2024/06/Untitled-design-90.jpg?resize=640,360&ssl=1" alt="Person browsing the Schmoll Asia Pacific website on a desktop computer" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2024-06-28">28 Jun 2024</time><span>News</span></span>
+    <span class="sm-panel__title">A new website for Schmoll Asia Pacific</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a></div>
+    <button type="button" class="sm-row__prev is-hidden" aria-label="Scroll left"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+    <button type="button" class="sm-row__next" aria-label="Scroll right"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+  </div>
+</section>
+
+<section class="sm-row sm-row--diary" id="insights">
+  <div class="sm-container"><h2 class="sm-row__h">Expert Insights</h2></div>
+  <div class="sm-container sm-row__wrap">
+    <div class="sm-row__slider">
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/granite-schmolls-best-option-on-the-market/">
+  <img src="https://i0.wp.com/www.schmoll-asia.com/wp-content/uploads/2024/09/granit_reitz_granit_vorteile_content.jpg.webp?resize=640,360&ssl=1" alt="Granite machine bases in the Reitz Natursteintechnik production warehouse in Aßlar, Germany" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2024-09-11">11 Sep 2024</time><span>Expert Insight</span></span>
+    <span class="sm-panel__title">Granite: the foundation of machine stability</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.schmoll-asia.com/difference-between-schmoll-asia-and-schmoll-maschinen/">
+  <img src="https://i0.wp.com/www.schmoll-asia.com/wp-content/uploads/2024/08/T-min-e1724320574972.png?resize=640,360&ssl=1" alt="Schmoll Asia Pacific and Schmoll Maschinen logos side by side" loading="lazy" width="640" height="360">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2024-08-22">22 Aug 2024</time><span>Expert Insight</span></span>
+    <span class="sm-panel__title">Schmoll Asia and Schmoll Maschinen: how we work together</span>
+    <span class="sm-panel__more">More <span aria-hidden="true">→</span></span>
+  </span>
+</a></div>
+    <button type="button" class="sm-row__prev is-hidden" aria-label="Scroll left"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+    <button type="button" class="sm-row__next" aria-label="Scroll right"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+  </div>
+</section>
+
+<section class="sm-row sm-row--video" id="videos">
+  <div class="sm-container"><h2 class="sm-row__h">Videos</h2></div>
+  <div class="sm-container sm-row__wrap">
+    <div class="sm-row__slider">
+<div class="sm-vtile" data-video-src="https://videos.files.wordpress.com/Q1GHA7sS/simpimav2026.mp4" data-video-title="SIMPIMA 2026 — Exhibition Reel">
+  <button type="button" class="sm-vtile__img" aria-label="Play: SIMPIMA 2026 — Exhibition Reel">
+    <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/video/poster-1.jpg" alt="" loading="lazy" width="640" height="360">
+    <span class="sm-vtile__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg></span>
+  </button>
+  <span class="sm-vtile__cap">SIMPIMA 2026 — Exhibition Reel</span>
+</div>
+<div class="sm-vtile" data-video-src="https://schmoll-asia.com/wp-content/uploads/2024/06/Untitled-design.mp4" data-video-title="Schmoll Asia Pacific">
+  <button type="button" class="sm-vtile__img" aria-label="Play: Schmoll Asia Pacific">
+    <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/video/poster-2.jpg" alt="" loading="lazy" width="640" height="360">
+    <span class="sm-vtile__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg></span>
+  </button>
+  <span class="sm-vtile__cap">Schmoll Asia Pacific</span>
+</div>
+<div class="sm-vtile" data-video-src="https://schmoll-asia.com/wp-content/uploads/2024/07/0807.mp4" data-video-title="Machine in Action">
+  <button type="button" class="sm-vtile__img" aria-label="Play: Machine in Action">
+    <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/video/poster-3.jpg" alt="" loading="lazy" width="640" height="360">
+    <span class="sm-vtile__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg></span>
+  </button>
+  <span class="sm-vtile__cap">Machine in Action</span>
+</div>
+<div class="sm-vtile" data-video-src="https://schmoll-asia.com/wp-content/uploads/2024/07/08071.mp4" data-video-title="Precision Drilling">
+  <button type="button" class="sm-vtile__img" aria-label="Play: Precision Drilling">
+    <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/video/poster-4.jpg" alt="" loading="lazy" width="640" height="360">
+    <span class="sm-vtile__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg></span>
+  </button>
+  <span class="sm-vtile__cap">Precision Drilling</span>
+</div>
+<div class="sm-vtile" data-video-src="https://schmoll-asia.com/wp-content/uploads/2024/05/0521.mp4" data-video-title="Schmoll Showcase">
+  <button type="button" class="sm-vtile__img" aria-label="Play: Schmoll Showcase">
+    <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/video/poster-5.jpg" alt="" loading="lazy" width="640" height="360">
+    <span class="sm-vtile__play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5l12 7-12 7z" fill="currentColor"/></svg></span>
+  </button>
+  <span class="sm-vtile__cap">Schmoll Showcase</span>
+</div></div>
+    <button type="button" class="sm-row__prev is-hidden" aria-label="Scroll left"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+    <button type="button" class="sm-row__next" aria-label="Scroll right"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+  </div>
+</section>
+
+<section class="sm-row sm-row--li" id="linkedin">
+  <div class="sm-container"><h2 class="sm-row__h">Latest from Schmoll Asia Pacific</h2></div>
+  <div class="sm-container sm-row__wrap">
+    <div class="sm-row__slider" data-li-slider>
+<a class="sm-panel sm-panel--img" href="https://www.linkedin.com/feed/update/urn:li:activity:7505525817104588800" target="_blank" rel="noopener noreferrer">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7505525817104588800-0.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.style.display='none'">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-09-15T07:20:00.724Z">15 Sep 2026</time><span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg> LinkedIn ↗</span></span>
+    <span class="sm-panel__title">Your next move in Asia</span>
+    <span class="sm-panel__more">View post <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.linkedin.com/feed/update/urn:li:activity:7500824841965576192" target="_blank" rel="noopener noreferrer">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7500824841965576192-0.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.style.display='none'">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-09-02T08:00:00.911Z">02 Sep 2026</time><span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg> LinkedIn ↗</span></span>
+    <span class="sm-panel__title">Meet Schmoll Asia Pacific at KPCA Show 2026</span>
+    <span class="sm-panel__more">View post <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.linkedin.com/feed/update/urn:li:activity:7497925740638957569" target="_blank" rel="noopener noreferrer">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7497925740638957569-0.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.style.display='none'">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-08-25T08:00:01.292Z">25 Aug 2026</time><span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg> LinkedIn ↗</span></span>
+    <span class="sm-panel__title">Bangkok Here We Come</span>
+    <span class="sm-panel__more">View post <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.linkedin.com/feed/update/urn:li:activity:7495751413998731265" target="_blank" rel="noopener noreferrer">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7495751413998731265-0.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.style.display='none'">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-08-19T08:00:01.424Z">19 Aug 2026</time><span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg> LinkedIn ↗</span></span>
+    <span class="sm-panel__title">สวัสดีครับ Bangkok!</span>
+    <span class="sm-panel__more">View post <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.linkedin.com/feed/update/urn:li:activity:7493214696838205441" target="_blank" rel="noopener noreferrer">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7493214696838205441-0.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.style.display='none'">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-08-12T08:00:00.923Z">12 Aug 2026</time><span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg> LinkedIn ↗</span></span>
+    <span class="sm-panel__title">FALCON: High-Precision Drilling for the IC Substrate Market</span>
+    <span class="sm-panel__more">View post <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--img" href="https://www.linkedin.com/feed/update/urn:li:activity:7490677983779893248" target="_blank" rel="noopener noreferrer">
+  <img src="https://b777-7ao.github.io/schmoll-asia-modern/assets/img/linkedin/7490677983779893248-0.jpg" alt="" loading="lazy" width="640" height="360" onerror="this.style.display='none'">
+  <span class="sm-panel__inner">
+    <span class="sm-panel__head"><time datetime="2026-08-05T08:00:01.400Z">05 Aug 2026</time><span><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg> LinkedIn ↗</span></span>
+    <span class="sm-panel__title">It's the right Time to Meet</span>
+    <span class="sm-panel__more">View post <span aria-hidden="true">↗</span></span>
+  </span>
+</a>
+<a class="sm-panel sm-panel--follow" href="https://www.linkedin.com/company/schmoll-asia-pacific" target="_blank" rel="noopener noreferrer">
+  <span class="sm-panel__title"><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg>&nbsp; Follow Schmoll Asia Pacific</span>
+  <span class="sm-panel__more">↗</span>
+</a></div>
+    <button type="button" class="sm-row__prev is-hidden" aria-label="Scroll left"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+    <button type="button" class="sm-row__next" aria-label="Scroll right"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+  </div>
+</section>
+<section class="sm-cta"><div class="sm-container sm-cta__in">
+  <div><h2>Looking for a specific manufacturing solution?</h2><p>Explore the relevant machine and application pages, or speak with a regional specialist.</p></div>
+  <div class="sm-cta__actions">
+    <a class="sm-btn" href="https://www.schmoll-asia.com/products/">Explore products</a>
+    <a class="sm-btn sm-btn--ghost" href="https://www.schmoll-asia.com/contact-us/">Contact our team</a>
+  </div>
+</div></section>
+</div>
+<script>(function(){"use strict";
+var root=document.getElementById("sap-media");if(!root)return;
+var lang=root.getAttribute("data-lang")||"en";
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmt(iso){var y=iso.slice(0,4),m=iso.slice(5,7),d=iso.slice(8,10);return(["zh","zh-hk","ko","th"].indexOf(lang)>-1)?y+"."+m+"."+d:d+" "+M[+m-1]+" "+y}
+var LI_ICON='<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.93V23h-4.51v-7.29c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.86V23H8.34V8.16z"/></svg>';
+/* rows: arrows */
+function bindRow(wrap){var slider=wrap.querySelector(".sm-row__slider"),next=wrap.querySelector(".sm-row__next"),prev=wrap.querySelector(".sm-row__prev");if(!slider||!next)return;
+ function update(){var atEnd=slider.scrollLeft+slider.clientWidth>=slider.scrollWidth-8,can=slider.scrollWidth>slider.clientWidth+8;next.classList.toggle("is-hidden",atEnd||!can);if(prev)prev.classList.toggle("is-hidden",slider.scrollLeft<=8)}
+ if(!wrap._bound){wrap._bound=true;next.addEventListener("click",function(){slider.scrollBy({left:Math.round(slider.clientWidth*.8),behavior:"smooth"})});if(prev)prev.addEventListener("click",function(){slider.scrollBy({left:-Math.round(slider.clientWidth*.8),behavior:"smooth"})});slider.addEventListener("scroll",update,{passive:true});window.addEventListener("resize",update)}
+ wrap._update=update;update()}
+root.querySelectorAll(".sm-row__wrap").forEach(bindRow);
+/* videos: poster-first */
+var active=null;
+root.querySelectorAll(".sm-vtile").forEach(function(tile){var btn=tile.querySelector(".sm-vtile__img");if(!btn)return;btn.addEventListener("click",function(){
+ if(active){active.pause();if(active._tile&&active._tile._btn)active.replaceWith(active._tile._btn);active=null}
+ var v=document.createElement("video");v.controls=true;v.playsInline=true;v.src=tile.getAttribute("data-video-src");v.setAttribute("aria-label",tile.getAttribute("data-video-title")||"Video");v._tile=tile;
+ v.addEventListener("error",function(){v.replaceWith(btn)});btn.replaceWith(v);tile._btn=btn;active=v;v.play().catch(function(){})})});
+/* linkedin: live refresh from the synced feed */
+var slider=root.querySelector("[data-li-slider]");if(!slider)return;
+var bases=[root.getAttribute("data-li-base"),root.getAttribute("data-li-alt")].filter(Boolean);
+function render(base,data){var posts=(data.posts||[]).filter(function(p){return!p.hidden&&p.approved!==false}).slice(0,6);if(!posts.length)return;
+ var h=posts.map(function(p){var img=p.images&&p.images[0]?(/^https?:/.test(p.images[0])?p.images[0]:base+"/"+p.images[0]):"";
+  return'<a class="sm-panel sm-panel--img" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">'+(img?'<img src="'+esc(img)+'" alt="" loading="lazy" width="640" height="360" onerror="this.style.display=\'none\'">':"")+
+  '<span class="sm-panel__inner"><span class="sm-panel__head"><time datetime="'+esc(p.date)+'">'+fmt(p.date)+'</time><span>'+LI_ICON+' LinkedIn ↗</span></span><span class="sm-panel__title">'+esc((p.customTitle||p.text.split("\n")[0]).slice(0,90))+'</span><span class="sm-panel__more">'+esc(root.getAttribute("data-li-view"))+' <span aria-hidden="true">↗</span></span></span></a>'}).join("");
+ h+='<a class="sm-panel sm-panel--follow" href="'+esc(root.getAttribute("data-li-source"))+'" target="_blank" rel="noopener noreferrer"><span class="sm-panel__title">'+LI_ICON+'&nbsp; '+esc(root.getAttribute("data-li-follow"))+'</span><span class="sm-panel__more">↗</span></a>';
+ slider.innerHTML=h;var wrap=slider.closest(".sm-row__wrap");if(wrap&&wrap._update)wrap._update()}
+(function tryNext(i){if(i>=bases.length||!window.fetch)return;var base=bases[i];
+ fetch(base+"/assets/data/linkedin.json?t="+Math.floor(Date.now()/36e5),{mode:"cors"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){render(base,d)}).catch(function(){tryNext(i+1)})})(0);
+})();
+</script>
