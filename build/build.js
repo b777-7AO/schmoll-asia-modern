@@ -406,7 +406,11 @@ const newsCard = (p, feature = false) => {
     : `<div class="${cls}" data-reveal>${media}${body}</div>`;
 };
 
-const sorted = [...POSTS].sort((a, b) => b.date.localeCompare(a.date));
+// CPCA 2026 report is the 2026 exhibition story: file it under News & Events.
+for (const p of POSTS) if (p.id === 7848) p.type = "event";
+// Exhibition (event) posts before 2026 are retired (client decision, 2026-09-23).
+const sorted = [...POSTS].sort((a, b) => b.date.localeCompare(a.date))
+  .filter((p) => !(p.type === "event" && p.date < "2026-01-01"));
 const newsList = sorted.filter((p) => p.category === "news");
 const blogList = sorted.filter((p) => p.category === "blog");
 
