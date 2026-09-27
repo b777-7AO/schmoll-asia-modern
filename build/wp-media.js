@@ -22,6 +22,15 @@ const MAP = JSON.parse(read("build/wp-post-map.json"));
 const POSTERS = fs.existsSync(path.join(ROOT, "build/wp-posters.json"))
   ? JSON.parse(read("build/wp-posters.json")) : {};
 
+// LinkedIn exhibition posts that also exist as articles on the live site
+// (created 2026-09-27): listed under News & Events like any other event story.
+const LI_ARTICLES = JSON.parse(read("content/news/linkedin-articles.json"));
+for (const a of LI_ARTICLES) {
+  POSTS.push({ id: a.id, date: a.date, type: "event", title: a.title, cleanTitle: a.title, featured: a.image, imageAlt: a.imageAlt, images: [], translations: {}, topics: [] });
+  MAP.map[a.id] = { en: a.id };
+  MAP.links[a.id] = a.link;
+}
+
 const i18nCtx = { window: {} };
 vm.runInNewContext(read("site/assets/js/i18n.js"), i18nCtx);
 const I18N = i18nCtx.window.SCHMOLL_I18N;

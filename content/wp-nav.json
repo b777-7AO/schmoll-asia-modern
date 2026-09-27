@@ -1,0 +1,979 @@
+{
+ "en": {
+  "name": "English",
+  "tag": "EN",
+  "home": "https://www.schmoll-asia.com/",
+  "contact": "https://www.schmoll-asia.com/contact-us/",
+  "items": [
+   {
+    "label": "About",
+    "url": "https://www.schmoll-asia.com/pcb-drilling/"
+   },
+   {
+    "label": "Team",
+    "url": "https://www.schmoll-asia.com/team/"
+   },
+   {
+    "label": "Products",
+    "url": "https://www.schmoll-asia.com/products/"
+   },
+   {
+    "label": "Applications",
+    "url": "https://www.schmoll-asia.com/application/",
+    "children": [
+     {
+      "label": "CCD Application",
+      "url": "https://www.schmoll-asia.com/ccdapplication/"
+     },
+     {
+      "label": "Backdrilling",
+      "url": "https://www.schmoll-asia.com/backdrilling-2/"
+     },
+     {
+      "label": "Substrate",
+      "url": "https://www.schmoll-asia.com/substrate/"
+     },
+     {
+      "label": "Automation",
+      "url": "https://www.schmoll-asia.com/automation/"
+     },
+     {
+      "label": "Fixture / Probe Card",
+      "url": "https://www.schmoll-asia.com/fixture-probe-card/"
+     },
+     {
+      "label": "XRay – XRA3",
+      "url": "https://www.schmoll-asia.com/xray-xra3/"
+     },
+     {
+      "label": "Laser",
+      "url": "https://www.schmoll-asia.com/laser-2/"
+     },
+     {
+      "label": "Electric Vehicle",
+      "url": "https://www.schmoll-asia.com/electric-vehicle/"
+     }
+    ]
+   },
+   {
+    "label": "Service",
+    "url": "https://www.schmoll-asia.com/service/"
+   },
+   {
+    "label": "Careers",
+    "url": "https://www.schmoll-asia.com/careers/"
+   },
+   {
+    "label": "Media",
+    "url": "https://www.schmoll-asia.com/media-links/",
+    "children": [
+     {
+      "label": "News",
+      "url": "https://www.schmoll-asia.com/news/"
+     },
+     {
+      "label": "Blog",
+      "url": "https://www.schmoll-asia.com/blog/"
+     },
+     {
+      "label": "Videos",
+      "url": "https://www.schmoll-asia.com/videos/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "About",
+    "url": "https://www.schmoll-asia.com/pcb-drilling/"
+   },
+   "products": {
+    "label": "Products",
+    "url": "https://www.schmoll-asia.com/products/"
+   },
+   "team": {
+    "label": "Team",
+    "url": "https://www.schmoll-asia.com/team/"
+   },
+   "media": {
+    "label": "Media",
+    "url": "https://www.schmoll-asia.com/media-links/",
+    "children": [
+     {
+      "label": "News",
+      "url": "https://www.schmoll-asia.com/news/"
+     },
+     {
+      "label": "Blog",
+      "url": "https://www.schmoll-asia.com/blog/"
+     },
+     {
+      "label": "Videos",
+      "url": "https://www.schmoll-asia.com/videos/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "Careers",
+    "url": "https://www.schmoll-asia.com/careers/"
+   },
+   "terms": "https://www.schmoll-asia.com/term-of-use/",
+   "privacy": "https://www.schmoll-asia.com/privacy-policy/"
+  },
+  "labels": {
+   "connect": "Connect",
+   "wechat": "Our WeChat",
+   "channels": "Channels",
+   "legal": "Legal",
+   "questions": "You have questions?",
+   "rights": "All rights reserved.",
+   "tagline": "German-engineered precision, automation and high-performance solutions for PCB manufacturing across Asia Pacific.",
+   "contact": "Contact",
+   "terms": "Term of use",
+   "privacy": "Privacy Policy",
+   "menu": "Menu",
+   "language": "Select language",
+   "ct_title": "Let's get in touch"
+  }
+ },
+ "zh": {
+  "name": "简体中文",
+  "tag": "ZH",
+  "home": "https://www.schmoll-asia.com/zh/home-cn/",
+  "contact": "https://www.schmoll-asia.com/zh/联系我们/",
+  "items": [
+   {
+    "label": "关于",
+    "url": "https://www.schmoll-asia.com/zh/关于/"
+   },
+   {
+    "label": "团队",
+    "url": "https://www.schmoll-asia.com/zh/团队/"
+   },
+   {
+    "label": "产品",
+    "url": "https://www.schmoll-asia.com/zh/产品/"
+   },
+   {
+    "label": "应用",
+    "url": "https://www.schmoll-asia.com/zh/应用-2/",
+    "children": [
+     {
+      "label": "CCD 应用",
+      "url": "https://www.schmoll-asia.com/zh/ccd-应用/"
+     },
+     {
+      "label": "背钻",
+      "url": "https://www.schmoll-asia.com/zh/背钻/"
+     },
+     {
+      "label": "载板",
+      "url": "https://www.schmoll-asia.com/zh/载板/"
+     },
+     {
+      "label": "自动化",
+      "url": "https://www.schmoll-asia.com/zh/自动化/"
+     },
+     {
+      "label": "治具/探针卡",
+      "url": "https://www.schmoll-asia.com/zh/治具-探针卡/"
+     },
+     {
+      "label": "Xray – XRA3",
+      "url": "https://www.schmoll-asia.com/zh/xray-xra3-cn/"
+     },
+     {
+      "label": "直接成像",
+      "url": "https://www.schmoll-asia.com/zh/直接成像-2/"
+     },
+     {
+      "label": "镭射",
+      "url": "https://www.schmoll-asia.com/zh/镭射/"
+     },
+     {
+      "label": "电动汽车",
+      "url": "https://www.schmoll-asia.com/zh/电动汽车/"
+     }
+    ]
+   },
+   {
+    "label": "服务",
+    "url": "https://www.schmoll-asia.com/zh/服务/"
+   },
+   {
+    "label": "招聘",
+    "url": "https://www.schmoll-asia.com/zh/招聘-3/"
+   },
+   {
+    "label": "媒体",
+    "url": "https://www.schmoll-asia.com/zh/媒体/",
+    "children": [
+     {
+      "label": "网志",
+      "url": "https://www.schmoll-asia.com/zh/网志/"
+     },
+     {
+      "label": "视频",
+      "url": "https://www.schmoll-asia.com/zh/视频-2/"
+     },
+     {
+      "label": "新闻",
+      "url": "https://www.schmoll-asia.com/zh/新闻/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "关于",
+    "url": "https://www.schmoll-asia.com/zh/关于/"
+   },
+   "products": {
+    "label": "产品",
+    "url": "https://www.schmoll-asia.com/zh/产品/"
+   },
+   "team": {
+    "label": "团队",
+    "url": "https://www.schmoll-asia.com/zh/团队/"
+   },
+   "media": {
+    "label": "媒体",
+    "url": "https://www.schmoll-asia.com/zh/媒体/",
+    "children": [
+     {
+      "label": "网志",
+      "url": "https://www.schmoll-asia.com/zh/网志/"
+     },
+     {
+      "label": "视频",
+      "url": "https://www.schmoll-asia.com/zh/视频-2/"
+     },
+     {
+      "label": "新闻",
+      "url": "https://www.schmoll-asia.com/zh/新闻/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "招聘",
+    "url": "https://www.schmoll-asia.com/zh/招聘-3/"
+   },
+   "terms": "https://www.schmoll-asia.com/zh/使用期限/",
+   "privacy": "https://www.schmoll-asia.com/zh/隐私政策/"
+  },
+  "labels": {
+   "connect": "联系",
+   "wechat": "我们的微信",
+   "channels": "渠道",
+   "legal": "法律",
+   "questions": "有疑问吗？",
+   "rights": "版权所有。",
+   "tagline": "源自德国工艺的精密、自动化与高性能 PCB 制造解决方案，服务整个亚太地区。",
+   "contact": "联系我们",
+   "terms": "使用期限",
+   "privacy": "隐私政策",
+   "menu": "菜单",
+   "language": "选择语言"
+  }
+ },
+ "zh-hk": {
+  "name": "繁體中文",
+  "tag": "HK",
+  "home": "https://www.schmoll-asia.com/zh-hk/home-3/",
+  "contact": "https://www.schmoll-asia.com/zh-hk/聯繫我們/",
+  "items": [
+   {
+    "label": "關於",
+    "url": "https://www.schmoll-asia.com/zh-hk/關於/"
+   },
+   {
+    "label": "團隊",
+    "url": "https://www.schmoll-asia.com/zh-hk/團隊/"
+   },
+   {
+    "label": "產品",
+    "url": "https://www.schmoll-asia.com/zh-hk/產品/"
+   },
+   {
+    "label": "應用",
+    "url": "https://www.schmoll-asia.com/zh-hk/應用-hk/",
+    "children": [
+     {
+      "label": "CCD 應用",
+      "url": "https://www.schmoll-asia.com/zh-hk/ccd-應用/"
+     },
+     {
+      "label": "背鑽",
+      "url": "https://www.schmoll-asia.com/zh-hk/背鑽/"
+     },
+     {
+      "label": "載板",
+      "url": "https://www.schmoll-asia.com/zh-hk/載板/"
+     },
+     {
+      "label": "自動化",
+      "url": "https://www.schmoll-asia.com/zh-hk/自動化/"
+     },
+     {
+      "label": "治具/探針卡",
+      "url": "https://www.schmoll-asia.com/zh-hk/治具-探針卡/"
+     },
+     {
+      "label": "Xray – XRA3",
+      "url": "https://www.schmoll-asia.com/zh-hk/xray-xra3-hk/"
+     },
+     {
+      "label": "直接成像",
+      "url": "https://www.schmoll-asia.com/zh-hk/直接成像/"
+     },
+     {
+      "label": "雷射",
+      "url": "https://www.schmoll-asia.com/zh-hk/雷射/"
+     },
+     {
+      "label": "電動汽車",
+      "url": "https://www.schmoll-asia.com/zh-hk/電動汽車/"
+     }
+    ]
+   },
+   {
+    "label": "服務",
+    "url": "https://www.schmoll-asia.com/zh-hk/服務/"
+   },
+   {
+    "label": "招聘",
+    "url": "https://www.schmoll-asia.com/zh-hk/招聘/"
+   },
+   {
+    "label": "媒體",
+    "url": "https://www.schmoll-asia.com/zh-hk/媒體/",
+    "children": [
+     {
+      "label": "新聞",
+      "url": "https://www.schmoll-asia.com/zh-hk/新聞/"
+     },
+     {
+      "label": "網誌",
+      "url": "https://www.schmoll-asia.com/zh-hk/網誌/"
+     },
+     {
+      "label": "視頻",
+      "url": "https://www.schmoll-asia.com/zh-hk/視頻/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "關於",
+    "url": "https://www.schmoll-asia.com/zh-hk/關於/"
+   },
+   "products": {
+    "label": "產品",
+    "url": "https://www.schmoll-asia.com/zh-hk/產品/"
+   },
+   "team": {
+    "label": "團隊",
+    "url": "https://www.schmoll-asia.com/zh-hk/團隊/"
+   },
+   "media": {
+    "label": "媒體",
+    "url": "https://www.schmoll-asia.com/zh-hk/媒體/",
+    "children": [
+     {
+      "label": "新聞",
+      "url": "https://www.schmoll-asia.com/zh-hk/新聞/"
+     },
+     {
+      "label": "網誌",
+      "url": "https://www.schmoll-asia.com/zh-hk/網誌/"
+     },
+     {
+      "label": "視頻",
+      "url": "https://www.schmoll-asia.com/zh-hk/視頻/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "招聘",
+    "url": "https://www.schmoll-asia.com/zh-hk/招聘/"
+   },
+   "terms": "https://www.schmoll-asia.com/zh-hk/使用期限-hk/",
+   "privacy": "https://www.schmoll-asia.com/zh-hk/隱私政策/"
+  },
+  "labels": {
+   "connect": "聯繫",
+   "wechat": "我們的 WeChat",
+   "channels": "頻道",
+   "legal": "法律",
+   "questions": "有疑問嗎？",
+   "rights": "版權所有。",
+   "tagline": "源自德國工藝的精密、自動化與高效能 PCB 製造解決方案，服務整個亞太地區。",
+   "contact": "聯繫我們",
+   "terms": "使用期限",
+   "privacy": "隱私權政策",
+   "menu": "選單",
+   "language": "選擇語言"
+  }
+ },
+ "ko": {
+  "name": "한국어",
+  "tag": "KO",
+  "home": "https://www.schmoll-asia.com/ko/home-4/",
+  "contact": "https://www.schmoll-asia.com/ko/문의하기/",
+  "items": [
+   {
+    "label": "정보",
+    "url": "https://www.schmoll-asia.com/ko/정보/"
+   },
+   {
+    "label": "팀",
+    "url": "https://www.schmoll-asia.com/ko/팀/"
+   },
+   {
+    "label": "제품",
+    "url": "https://www.schmoll-asia.com/ko/제품/"
+   },
+   {
+    "label": "애플리케이션",
+    "url": "https://www.schmoll-asia.com/ko/애플리케이션/",
+    "children": [
+     {
+      "label": "CCD애플리케이션",
+      "url": "https://www.schmoll-asia.com/ko/ccd애플리케이션/"
+     },
+     {
+      "label": "백드릴링",
+      "url": "https://www.schmoll-asia.com/ko/백드릴링/"
+     },
+     {
+      "label": "기판",
+      "url": "https://www.schmoll-asia.com/ko/기판/"
+     },
+     {
+      "label": "자동화",
+      "url": "https://www.schmoll-asia.com/ko/자동화/"
+     },
+     {
+      "label": "픽스처/ 프로브 카드",
+      "url": "https://www.schmoll-asia.com/ko/픽스처-프로브-카드/"
+     },
+     {
+      "label": "X레이 – XRA3",
+      "url": "https://www.schmoll-asia.com/ko/x레이-xra3/"
+     },
+     {
+      "label": "직접 이미징",
+      "url": "https://www.schmoll-asia.com/ko/직접-이미징/"
+     },
+     {
+      "label": "레이저",
+      "url": "https://www.schmoll-asia.com/ko/레이저/"
+     },
+     {
+      "label": "전기 자동차",
+      "url": "https://www.schmoll-asia.com/ko/전기-자동차/"
+     }
+    ]
+   },
+   {
+    "label": "서비스",
+    "url": "https://www.schmoll-asia.com/ko/서비스/"
+   },
+   {
+    "label": "채용 정보",
+    "url": "https://www.schmoll-asia.com/ko/채용-정보/"
+   },
+   {
+    "label": "미디어",
+    "url": "https://www.schmoll-asia.com/ko/미디어/",
+    "children": [
+     {
+      "label": "뉴스",
+      "url": "https://www.schmoll-asia.com/ko/뉴스/"
+     },
+     {
+      "label": "블로그",
+      "url": "https://www.schmoll-asia.com/ko/블로그/"
+     },
+     {
+      "label": "동영상",
+      "url": "https://www.schmoll-asia.com/ko/동영상/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "정보",
+    "url": "https://www.schmoll-asia.com/ko/정보/"
+   },
+   "products": {
+    "label": "제품",
+    "url": "https://www.schmoll-asia.com/ko/제품/"
+   },
+   "team": {
+    "label": "팀",
+    "url": "https://www.schmoll-asia.com/ko/팀/"
+   },
+   "media": {
+    "label": "미디어",
+    "url": "https://www.schmoll-asia.com/ko/미디어/",
+    "children": [
+     {
+      "label": "뉴스",
+      "url": "https://www.schmoll-asia.com/ko/뉴스/"
+     },
+     {
+      "label": "블로그",
+      "url": "https://www.schmoll-asia.com/ko/블로그/"
+     },
+     {
+      "label": "동영상",
+      "url": "https://www.schmoll-asia.com/ko/동영상/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "채용 정보",
+    "url": "https://www.schmoll-asia.com/ko/채용-정보/"
+   },
+   "terms": "https://www.schmoll-asia.com/ko/사용-기간/",
+   "privacy": "https://www.schmoll-asia.com/ko/개인정보-보호정책/"
+  },
+  "labels": {
+   "connect": "연결하기",
+   "wechat": "우리 WeChat",
+   "channels": "채널",
+   "legal": "법적 고지",
+   "questions": "궁금한 점이 있으신가요?",
+   "rights": "모든 권리 보유.",
+   "tagline": "아시아 태평양 전역의 PCB 제조를 위한 독일 엔지니어링 정밀성, 자동화 및 고성능 솔루션.",
+   "contact": "문의하기",
+   "terms": "사용 기간",
+   "privacy": "개인정보 보호정책",
+   "menu": "메뉴",
+   "language": "언어 선택"
+  }
+ },
+ "ms": {
+  "name": "Bahasa Melayu",
+  "tag": "MS",
+  "home": "https://www.schmoll-asia.com/ms/home-5/",
+  "contact": "https://www.schmoll-asia.com/ms/hubungi-kami/",
+  "items": [
+   {
+    "label": "Mengenai",
+    "url": "https://www.schmoll-asia.com/ms/mengenai/"
+   },
+   {
+    "label": "Pasukan",
+    "url": "https://www.schmoll-asia.com/ms/pasukan/"
+   },
+   {
+    "label": "Produk",
+    "url": "https://www.schmoll-asia.com/ms/produk/"
+   },
+   {
+    "label": "Aplikasi",
+    "url": "https://www.schmoll-asia.com/ms/aplikasi/",
+    "children": [
+     {
+      "label": "Aplikasi CCD",
+      "url": "https://www.schmoll-asia.com/ms/aplikasi-ccd/"
+     },
+     {
+      "label": "Pengeboran Belakang",
+      "url": "https://www.schmoll-asia.com/ms/pengeboran-belakang/"
+     },
+     {
+      "label": "Substrat",
+      "url": "https://www.schmoll-asia.com/ms/substrat/"
+     },
+     {
+      "label": "Automasi",
+      "url": "https://www.schmoll-asia.com/ms/automasi/"
+     },
+     {
+      "label": "Kad Lekapan/Probe",
+      "url": "https://www.schmoll-asia.com/ms/kad-lekapan-probe/"
+     },
+     {
+      "label": "Xray – XRA3",
+      "url": "https://www.schmoll-asia.com/ms/xray-xra3-ms/"
+     },
+     {
+      "label": "Pencitraan Langsung",
+      "url": "https://www.schmoll-asia.com/ms/pencitraan-langsung/"
+     },
+     {
+      "label": "Laser",
+      "url": "https://www.schmoll-asia.com/ms/laser/"
+     },
+     {
+      "label": "Kenderaan Elektrik",
+      "url": "https://www.schmoll-asia.com/ms/kenderaan-elektrik/"
+     }
+    ]
+   },
+   {
+    "label": "Servis",
+    "url": "https://www.schmoll-asia.com/ms/perkhidmatan/"
+   },
+   {
+    "label": "Kerjaya",
+    "url": "https://www.schmoll-asia.com/ms/kerjaya/"
+   },
+   {
+    "label": "Media",
+    "url": "https://www.schmoll-asia.com/ms/media/",
+    "children": [
+     {
+      "label": "Berita",
+      "url": "https://www.schmoll-asia.com/ms/berita/"
+     },
+     {
+      "label": "Blog",
+      "url": "https://www.schmoll-asia.com/ms/blog-ms/"
+     },
+     {
+      "label": "Video",
+      "url": "https://www.schmoll-asia.com/ms/video/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "Mengenai",
+    "url": "https://www.schmoll-asia.com/ms/mengenai/"
+   },
+   "products": {
+    "label": "Produk",
+    "url": "https://www.schmoll-asia.com/ms/produk/"
+   },
+   "team": {
+    "label": "Pasukan",
+    "url": "https://www.schmoll-asia.com/ms/pasukan/"
+   },
+   "media": {
+    "label": "Media",
+    "url": "https://www.schmoll-asia.com/ms/media/",
+    "children": [
+     {
+      "label": "Berita",
+      "url": "https://www.schmoll-asia.com/ms/berita/"
+     },
+     {
+      "label": "Blog",
+      "url": "https://www.schmoll-asia.com/ms/blog-ms/"
+     },
+     {
+      "label": "Video",
+      "url": "https://www.schmoll-asia.com/ms/video/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "Kerjaya",
+    "url": "https://www.schmoll-asia.com/ms/kerjaya/"
+   },
+   "terms": "https://www.schmoll-asia.com/ms/terma-penggunaan/",
+   "privacy": "https://www.schmoll-asia.com/ms/dasar-privasi/"
+  },
+  "labels": {
+   "connect": "Hubungi",
+   "wechat": "WeChat Kami",
+   "channels": "Saluran",
+   "legal": "Undang-undang",
+   "questions": "Ada pertanyaan?",
+   "rights": "Hak cipta terpelihara.",
+   "tagline": "Kepresisan kejuruteraan Jerman, automasi dan penyelesaian berprestasi tinggi untuk pembuatan PCB di seluruh Asia Pasifik.",
+   "contact": "Hubungi Kami",
+   "terms": "Terma Penggunaan",
+   "privacy": "Dasar Privasi",
+   "menu": "Menu",
+   "language": "Pilih bahasa"
+  }
+ },
+ "th": {
+  "name": "ไทย",
+  "tag": "TH",
+  "home": "https://www.schmoll-asia.com/th/home-6/",
+  "contact": "https://www.schmoll-asia.com/th/ติดต่อเรา/",
+  "items": [
+   {
+    "label": "เกี่ยวกับเรา",
+    "url": "https://www.schmoll-asia.com/th/เกี่ยวกับเรา/"
+   },
+   {
+    "label": "ทีมงาน",
+    "url": "https://www.schmoll-asia.com/th/ทีมงาน/"
+   },
+   {
+    "label": "ผลิตภัณฑ์",
+    "url": "https://www.schmoll-asia.com/th/ผลิตภัณฑ์/"
+   },
+   {
+    "label": "แอปพลิเคชัน",
+    "url": "https://www.schmoll-asia.com/th/แอปพลิเคชัน/",
+    "children": [
+     {
+      "label": "แอปพลิเคชัน CCD",
+      "url": "https://www.schmoll-asia.com/th/แอปพลิเคชัน-ccd/"
+     },
+     {
+      "label": "Backdrilling",
+      "url": "https://www.schmoll-asia.com/th/backdrilling/"
+     },
+     {
+      "label": "ซับสเตรต",
+      "url": "https://www.schmoll-asia.com/th/ซับสเตรต/"
+     },
+     {
+      "label": "ระบบอัตโนมัติ",
+      "url": "https://www.schmoll-asia.com/th/ระบบอัตโนมัติ/"
+     },
+     {
+      "label": "ฟิกซ์เจอร์/การ์ดโพรบ",
+      "url": "https://www.schmoll-asia.com/th/ฟิกซ์เจอร์-การ์ดโพรบ/"
+     },
+     {
+      "label": "XRay – XRA3",
+      "url": "https://www.schmoll-asia.com/th/xray-xra3-th/"
+     },
+     {
+      "label": "การถ่ายภาพโดยตรง",
+      "url": "https://www.schmoll-asia.com/th/การถ่ายภาพโดยตรง/"
+     },
+     {
+      "label": "เลเซอร์",
+      "url": "https://www.schmoll-asia.com/th/เลเซอร์/"
+     },
+     {
+      "label": "ยานยนต์ไฟฟ้า",
+      "url": "https://www.schmoll-asia.com/th/ยานยนต์ไฟฟ้า/"
+     }
+    ]
+   },
+   {
+    "label": "บริการ",
+    "url": "https://www.schmoll-asia.com/th/บริการ/"
+   },
+   {
+    "label": "ร่วมงานกับเรา",
+    "url": "https://www.schmoll-asia.com/th/ร่วมงานกับเรา/"
+   },
+   {
+    "label": "สื่อ",
+    "url": "https://www.schmoll-asia.com/th/สื่อ/",
+    "children": [
+     {
+      "label": "ข่าว",
+      "url": "https://www.schmoll-asia.com/th/ข่าว/"
+     },
+     {
+      "label": "บล็อก",
+      "url": "https://www.schmoll-asia.com/th/บล็อก/"
+     },
+     {
+      "label": "วิดีโอ",
+      "url": "https://www.schmoll-asia.com/th/วิดีโอ/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "เกี่ยวกับเรา",
+    "url": "https://www.schmoll-asia.com/th/เกี่ยวกับเรา/"
+   },
+   "products": {
+    "label": "ผลิตภัณฑ์",
+    "url": "https://www.schmoll-asia.com/th/ผลิตภัณฑ์/"
+   },
+   "team": {
+    "label": "ทีมงาน",
+    "url": "https://www.schmoll-asia.com/th/ทีมงาน/"
+   },
+   "media": {
+    "label": "สื่อ",
+    "url": "https://www.schmoll-asia.com/th/สื่อ/",
+    "children": [
+     {
+      "label": "ข่าว",
+      "url": "https://www.schmoll-asia.com/th/ข่าว/"
+     },
+     {
+      "label": "บล็อก",
+      "url": "https://www.schmoll-asia.com/th/บล็อก/"
+     },
+     {
+      "label": "วิดีโอ",
+      "url": "https://www.schmoll-asia.com/th/วิดีโอ/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "ร่วมงานกับเรา",
+    "url": "https://www.schmoll-asia.com/th/ร่วมงานกับเรา/"
+   },
+   "terms": "https://www.schmoll-asia.com/th/ข้อตกลงในการใช้งาน/",
+   "privacy": "https://www.schmoll-asia.com/th/นโยบายความเป็นส่วนตัว/"
+  },
+  "labels": {
+   "connect": "ติดต่อ",
+   "wechat": "WeChat ของเรา",
+   "channels": "ช่องทาง",
+   "legal": "กฎหมาย",
+   "questions": "มีคำถามหรือไม่?",
+   "rights": "สงวนลิขสิทธิ์",
+   "tagline": "ความแม่นยำแบบวิศวกรรมเยอรมัน ระบบอัตโนมัติ และโซลูชันประสิทธิภาพสูงสำหรับการผลิต PCB ทั่วภูมิภาคเอเชียแปซิฟิก",
+   "contact": "ติดต่อเรา",
+   "terms": "ข้อตกลงในการใช้งาน",
+   "privacy": "นโยบายความเป็นส่วนตัว",
+   "menu": "เมนู",
+   "language": "เลือกภาษา"
+  }
+ },
+ "vi": {
+  "name": "Tiếng Việt",
+  "tag": "VI",
+  "home": "https://www.schmoll-asia.com/vi/home/",
+  "contact": "https://www.schmoll-asia.com/vi/lien-he/",
+  "items": [
+   {
+    "label": "Giới thiệu",
+    "url": "https://www.schmoll-asia.com/vi/ve/"
+   },
+   {
+    "label": "Đội ngũ",
+    "url": "https://www.schmoll-asia.com/vi/doi-ngu/"
+   },
+   {
+    "label": "Sản phẩm",
+    "url": "https://www.schmoll-asia.com/vi/san-pham/"
+   },
+   {
+    "label": "Ứng dụng",
+    "url": "https://www.schmoll-asia.com/vi/ung-dung/",
+    "children": [
+     {
+      "label": "Ứng dụng CCD",
+      "url": "https://www.schmoll-asia.com/vi/ung-dung-ccd/"
+     },
+     {
+      "label": "Khoan ngược",
+      "url": "https://www.schmoll-asia.com/vi/khoan-nguoc/"
+     },
+     {
+      "label": "Chất nền",
+      "url": "https://www.schmoll-asia.com/vi/chat-nen/"
+     },
+     {
+      "label": "Tự động hóa",
+      "url": "https://www.schmoll-asia.com/vi/tu-dong-hoa/"
+     },
+     {
+      "label": "Thiết bị cố định / Thẻ dò",
+      "url": "https://www.schmoll-asia.com/vi/thiet-bi-co-dinh-the-do/"
+     },
+     {
+      "label": "XRay – XRA3",
+      "url": "https://www.schmoll-asia.com/vi/xray-xra3-vi/"
+     },
+     {
+      "label": "Hình ảnh trực tiếp",
+      "url": "https://www.schmoll-asia.com/vi/hinh-anh-truc-tiep/"
+     },
+     {
+      "label": "Laser",
+      "url": "https://www.schmoll-asia.com/vi/laser-vi/"
+     },
+     {
+      "label": "Xe điện",
+      "url": "https://www.schmoll-asia.com/vi/xe-dien/"
+     }
+    ]
+   },
+   {
+    "label": "Dịch vụ",
+    "url": "https://www.schmoll-asia.com/vi/dich-vu/"
+   },
+   {
+    "label": "Tuyển dụng",
+    "url": "https://www.schmoll-asia.com/vi/nghe-nghiep/"
+   },
+   {
+    "label": "Truyền thông",
+    "url": "https://www.schmoll-asia.com/vi/truyen-thong/",
+    "children": [
+     {
+      "label": "Tin tức",
+      "url": "https://www.schmoll-asia.com/vi/tin-tuc/"
+     },
+     {
+      "label": "Blog",
+      "url": "https://www.schmoll-asia.com/vi/blog-vi/"
+     },
+     {
+      "label": "Video",
+      "url": "https://www.schmoll-asia.com/vi/video-vi/"
+     }
+    ]
+   }
+  ],
+  "footer": {
+   "about": {
+    "label": "Giới thiệu",
+    "url": "https://www.schmoll-asia.com/vi/ve/"
+   },
+   "products": {
+    "label": "Sản phẩm",
+    "url": "https://www.schmoll-asia.com/vi/san-pham/"
+   },
+   "team": {
+    "label": "Đội ngũ",
+    "url": "https://www.schmoll-asia.com/vi/doi-ngu/"
+   },
+   "media": {
+    "label": "Truyền thông",
+    "url": "https://www.schmoll-asia.com/vi/truyen-thong/",
+    "children": [
+     {
+      "label": "Tin tức",
+      "url": "https://www.schmoll-asia.com/vi/tin-tuc/"
+     },
+     {
+      "label": "Blog",
+      "url": "https://www.schmoll-asia.com/vi/blog-vi/"
+     },
+     {
+      "label": "Video",
+      "url": "https://www.schmoll-asia.com/vi/video-vi/"
+     }
+    ]
+   },
+   "careers": {
+    "label": "Tuyển dụng",
+    "url": "https://www.schmoll-asia.com/vi/nghe-nghiep/"
+   },
+   "terms": "https://www.schmoll-asia.com/vi/dieu-khoan-su-dung/",
+   "privacy": "https://www.schmoll-asia.com/vi/chinh-sach-bao-mat/"
+  },
+  "labels": {
+   "connect": "Kết nối",
+   "wechat": "WeChat của chúng tôi",
+   "channels": "Kênh",
+   "legal": "Pháp lý",
+   "questions": "Bạn có câu hỏi?",
+   "rights": "Bảo lưu mọi quyền.",
+   "tagline": "Độ chính xác kỹ thuật Đức, tự động hóa và các giải pháp hiệu suất cao cho sản xuất PCB trên khắp Châu Á – Thái Bình Dương.",
+   "contact": "Liên hệ",
+   "terms": "Điều khoản sử dụng",
+   "privacy": "Chính sách bảo mật",
+   "menu": "Menu",
+   "language": "Chọn ngôn ngữ"
+  }
+ }
+}

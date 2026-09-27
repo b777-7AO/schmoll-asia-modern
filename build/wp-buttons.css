@@ -1,0 +1,8 @@
+/* Schmoll Asia Pacific: one button style across the live site, the same as the
+   media page buttons (notched corner, Jost caps, brand red, dark red on hover).
+   Appended to Elementor Site Settings > Custom CSS (kit 2476). */
+.elementor-button,.elementor-flip-box__button,.elementskit-btn{font-family:"Jost","Helvetica Neue",Arial,sans-serif!important;font-weight:600!important;font-size:.8rem!important;line-height:1.2!important;letter-spacing:.08em!important;text-transform:uppercase!important;border:0!important;border-radius:0!important;box-shadow:none!important;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%);transition:background-color .2s,color .2s!important}
+a.elementor-button,a.elementor-flip-box__button,a.elementskit-btn{padding:14px 26px!important}
+.elementor-button .elementor-button-text,.elementor-button .elementor-button-content-wrapper{font:inherit!important;letter-spacing:inherit!important;color:inherit!important}
+.elementskit-btn{background-color:#C11819!important;color:#fff!important}
+.elementor-button:hover,.elementor-button:focus,.elementor-flip-box__button:hover,.elementskit-btn:hover,.elementskit-btn:focus{background-color:#9d1314!important;color:#fff!important}
