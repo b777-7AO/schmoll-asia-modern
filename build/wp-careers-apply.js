@@ -17,8 +17,10 @@ const OUT = path.join(__dirname, "_careers-apply");
 fs.mkdirSync(OUT, { recursive: true });
 
 const PAGES = {
-  en:    { id: 106,  mode: "existing", section: "3b3d1422", heading: "f1d3236" },
-  zh:    { id: 4869, mode: "existing", section: "90defb7",  heading: "ec1624b" },
+  // EN + zh: the existing "Latest Position Offerings" row is heading | content | photo,
+  // too narrow for the cards -> full-width container right below it (no extra heading).
+  en:    { id: 106,  mode: "new", before: "52768f9", relocate: true },
+  zh:    { id: 4869, mode: "new", before: "52768f9", relocate: true },
   "zh-hk": { id: 5065, mode: "new", before: "52768f9", cloneHeading: "8d288df", title: "最新職位空缺" },
   ko:    { id: 5286, mode: "new", before: "52768f9", cloneHeading: "8d288df", title: "최신 채용 공고" },
   ms:    { id: 5496, mode: "new", before: "52768f9", cloneHeading: "8d288df", title: "Jawatan Terkini" },
@@ -41,6 +43,10 @@ for (const [lang, p] of Object.entries(PAGES)) {
       if (m.get('widgetType')==='html' && String(m.get('settings').get('html')||'').indexOf('id="sap-jobs"')>-1) existing = m;
       (m.get('elements')||[]).forEach(walk);
     });
+    if (existing && P.relocate) {
+      $e.run('document/elements/delete', {container: elementor.getContainer(existing.get('id'))});
+      existing = null;
+    }
     if (existing) {
       $e.run('document/elements/settings', {container: elementor.getContainer(existing.get('id')), settings:{html: HTML}});
       $e.internal('document/save/set-is-modified', {status:true});
@@ -64,12 +70,16 @@ for (const [lang, p] of Object.entries(PAGES)) {
       if (bi < 0) return JSON.stringify({err:'before-container not found', ids: ids});
       var newSec = $e.run('document/elements/create', {container: root, model:{elType:'container', settings:{content_width:'boxed', padding:{unit:'px',top:'10',right:'0',bottom:'40',left:'0',isLinked:false}}}, options:{at: bi}});
       // heading cloned from the page's own elementskit heading (keeps its typography)
-      var src = elementor.getContainer(P.cloneHeading);
-      var hs = src ? JSON.parse(JSON.stringify(src.model.get('settings').toJSON())) : {};
-      delete hs._element_id;
-      hs.ekit_heading_title = P.title;
-      $e.run('document/elements/create', {container: newSec, model:{elType:'widget', widgetType: src ? src.model.get('widgetType') : 'heading', settings: src ? hs : {title: P.title}}});
-      targetContainer = newSec; at = 1;
+      var at0 = 0;
+      if (P.title) {
+        var src = elementor.getContainer(P.cloneHeading);
+        var hs = src ? JSON.parse(JSON.stringify(src.model.get('settings').toJSON())) : {};
+        delete hs._element_id;
+        hs.ekit_heading_title = P.title;
+        $e.run('document/elements/create', {container: newSec, model:{elType:'widget', widgetType: src ? src.model.get('widgetType') : 'heading', settings: src ? hs : {title: P.title}}});
+        at0 = 1;
+      }
+      targetContainer = newSec; at = at0;
     }
     var w = $e.run('document/elements/create', {container: targetContainer, model:{elType:'widget', widgetType:'html', settings:{html: HTML}}, options:{at: at}});
     $e.internal('document/save/set-is-modified', {status:true});
