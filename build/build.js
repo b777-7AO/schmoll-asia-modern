@@ -290,6 +290,47 @@ const servicePage = banner('Service', 'Got a Problem? Schmoll is Here.', '<span>
   </div>
 </section>` + CONTACT_CTA;
 
+
+/* Open positions (content/careers/<lang>.json, same data as the live WP widget).
+   One block per language, switched by applyLang via data-article-lang (EN fallback). */
+function careersJobs() {
+  const LANGS = ["en", "zh", "zh-hk", "ko", "ms", "th", "vi"];
+  const esc = (x) => String(x).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const MAIL = "career@schmoll-asia.com";
+  const blocks = (bs) => bs.map((b) => b.h4 ? `<h5>${esc(b.h4)}</h5>` : b.p ? `<p>${esc(b.p)}</p>` : b.li ? `<ul>${b.li.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "").join("");
+  const card = (job, ui) => {
+    const meta = [];
+    if (job.meta.company) meta.push([ui.company, job.meta.company]);
+    meta.push([ui.location, job.meta.location], [ui.reportsTo, job.meta.reportsTo]);
+    if (job.meta.salary) meta.push([ui.salary, job.meta.salary]);
+    return `<article class="job fam-notch" id="job-${job.id}">
+  <span class="eyebrow">${esc(ui.kicker)}</span>
+  <h3 class="job__title">${esc(job.title)}</h3>
+  <p class="job__tag">${esc(job.tagline)}</p>
+  <dl class="job__meta">${meta.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+  <details class="job__details"><summary><span class="job__open">${esc(ui.details)}</span><span class="job__close">${esc(ui.close)}</span></summary>
+  <div class="job__body prose">${job.sections.map((sec) => `<h4>${esc(sec.h)}</h4>${blocks(sec.blocks)}`).join("")}<p class="job__closing">${esc(job.closing)}</p></div></details>
+  <div class="job__actions"><a class="btn" href="mailto:${MAIL}?subject=${encodeURIComponent(job.subject)}">${esc(ui.apply)} ${arrow()}</a><span class="job__note">${esc(ui.applyNote).replace(MAIL, `<a href="mailto:${MAIL}">${MAIL}</a>`)}</span></div>
+</article>`;
+  };
+  const inner = LANGS.map((lang) => {
+    const d = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "content/careers", lang + ".json"), "utf8"));
+    return `<div data-article-lang="${lang}"${lang === "en" ? "" : " hidden"}>
+  <p class="jobs__intro">${esc(d.ui.intro)}</p>
+  <div class="jobs__grid">${d.jobs.map((j) => card(j, d.ui)).join("\n")}</div>
+  <p class="jobs__address">${esc(d.ui.address)}</p>
+</div>`;
+  }).join("\n");
+  return `
+<section class="section section--alt" id="positions">
+  <div class="container">
+    <span class="eyebrow" data-i18n="car.open">Open positions</span>
+    <h2 style="margin:16px 0 28px" data-i18n="car.latest">Latest Position Offerings</h2>
+    ${inner}
+  </div>
+</section>`;
+}
+
 /* ======================================================= CAREERS */
 const careersPage = banner('Careers', 'Start Your Career With Schmoll', '<span>Careers</span>', 'assets/img/team-hero.jpg') + `
 <section class="section">
@@ -309,7 +350,7 @@ const careersPage = banner('Careers', 'Start Your Career With Schmoll', '<span>C
       </div>
     </div>
   </div>
-</section>` + CONTACT_CTA;
+</section>` + careersJobs() + CONTACT_CTA;
 
 /* ======================================================= CONTACT */
 const offices = [
