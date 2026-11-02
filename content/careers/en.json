@@ -1,0 +1,190 @@
+{
+  "lang": "en",
+  "ui": {
+    "kicker": "Open positions",
+    "intro": "We are growing our organisation in China. Two senior positions are open at Dongguan Schmoll Electronic Equipment Co., Ltd. in Guangdong Province.",
+    "location": "Location",
+    "reportsTo": "Reports to",
+    "company": "Company",
+    "salary": "Salary",
+    "details": "Full job description",
+    "close": "Close",
+    "apply": "Apply now",
+    "applyNote": "Send your application to career@schmoll-asia.com",
+    "address": "Dongguan Schmoll Electronic Equipment Co., Ltd. | Gaobu Town, Dongguan City, Guangdong Province, China"
+  },
+  "jobs": [
+    {
+      "id": "rsm",
+      "title": "Regional Sales Manager Asia Pacific",
+      "tagline": "Operational lead for regional sales across Asia Pacific, working directly with the Group CSO.",
+      "meta": {
+        "company": "Dongguan Schmoll Electronic Equipment Co., Ltd., an international machine manufacturer serving the electronics industry",
+        "salary": "Competitive salary package",
+        "location": "Guangdong, China",
+        "reportsTo": "The locally based German Group CSO (Chief Sales Officer)"
+      },
+      "subject": "Application: Regional Sales Manager Asia Pacific",
+      "sections": [
+        {"h": "About Schmoll Asia Pacific", "blocks": [
+          {"p": "Schmoll Asia Pacific is an internationally active machine builder for the electronics industry with production in Germany. With around 500 employees in Germany and 300 employees in Asia, we generate annual sales of roughly 150 million euros."},
+          {"p": "As part of our geographic expansion and to support our continued growth in the Asian market, we are looking for qualified specialists and managers to strengthen our organisation in China."}
+        ]},
+        {"h": "Responsibilities", "blocks": [
+          {"p": "The Regional Sales Manager Asia Pacific reports directly to the Group CSO and supports the execution of the company's sales strategy across the entire Asia Pacific region."},
+          {"p": "The role coordinates regional sales activities, looks after customers and sales staff, and is responsible for the day-to-day handling of sales opportunities, revenue forecasts and commercial follow-up."},
+          {"p": "As the central interface between customers, sales, product management, development and service, the role holder ensures that every activity along the sales process is carried through successfully."},
+          {"p": "The Regional Sales Manager takes ownership of the daily operational business of regional sales, which allows the Group CSO to concentrate on strategic business development, key accounts and long-term growth initiatives."}
+        ]},
+        {"h": "Your tasks", "blocks": [
+          {"h4": "1. Sales organisation and customer care"},
+          {"li": [
+            "Central point of contact for regional sales enquiries and day-to-day customer requests.",
+            "Support for customers and sales staff throughout the entire sales process.",
+            "Coordination of quotation preparation, price reviews and the drafting of commercial offers.",
+            "Timely follow-up of customer enquiries, sales opportunities and open items.",
+            "Monitoring and support of contract negotiations in line with company guidelines."
+          ]},
+          {"h4": "2. Regional sales coordination"},
+          {"li": [
+            "Support and coordination of regional sales activities across Asia.",
+            "First escalation point for operational sales issues and customer concerns.",
+            "Organisation of regular sales meetings and sales pipeline reviews.",
+            "Facilitating communication between customers and internal departments.",
+            "Ensuring consistent implementation of the group-wide sales processes."
+          ]},
+          {"h4": "3. Business development"},
+          {"li": [
+            "Support in expanding strategically important customer relationships within the region.",
+            "Support of the Group CSO in initiatives to open up and expand regional markets.",
+            "Maintaining and developing long-term relationships with existing customers and business partners."
+          ]},
+          {"h4": "4. Sales forecasting and reporting"},
+          {"li": [
+            "Preparation and maintenance of reliable sales forecasts and an up-to-date sales pipeline.",
+            "Monitoring of order intake, revenue development and relevant market trends.",
+            "Preparation of regular management reports and sales performance analyses.",
+            "Support of the annual budgeting and sales planning."
+          ]},
+          {"h4": "5. Project and delivery coordination"},
+          {"li": [
+            "Alignment with Operations, Engineering and Service to ensure smooth project execution.",
+            "Monitoring of key customer projects and delivery dates.",
+            "Support of customers during machine delivery, acceptance and production ramp-up.",
+            "Coordination and support in resolving commercial and logistical challenges."
+          ]},
+          {"h4": "6. Support and leadership of the sales teams"},
+          {"li": [
+            "Technical guidance and support of local sales staff and sales agents.",
+            "Promoting cross-border cooperation between sales units and sales territories.",
+            "Support in training and developing the sales staff.",
+            "Fostering a customer-focused and solution-oriented company culture."
+          ]}
+        ]},
+        {"h": "Your profile", "blocks": [
+          {"li": [
+            "Fluent in German and English; Chinese is an advantage.",
+            "Completed bachelor's degree in business administration, engineering, marketing or a comparable field.",
+            "At least five years of professional experience in technical B2B sales.",
+            "Experience in the PCB industry, electronics manufacturing, capital equipment sales or industrial machinery.",
+            "Strong commercial understanding and sound negotiation skills.",
+            "Communication skills and international, intercultural work experience.",
+            "Willingness to travel regularly within Asia and occasionally to Germany."
+          ]},
+          {"h4": "Industry experience"},
+          {"p": "We are looking for candidates with extensive experience in the machinery and equipment industry for PCB manufacturing, in particular with in-depth knowledge of mechanical PCB drilling and/or routing machines."},
+          {"p": "Professional experience with equipment from leading manufacturers such as Via Mechanics, Schmoll, Suzhou Vega Technology, Han's Laser, Ta Liang Technology, Tongtai, Posalux or comparable companies is especially welcome."},
+          {"p": "Applicants from leading PCB manufacturers are also considered, provided they bring extensive experience in the following areas:"},
+          {"li": [
+            "Drilling and routing technologies for printed circuit boards",
+            "Process engineering and manufacturing methods",
+            "Technical benchmark studies of production machines",
+            "Assessment and evaluation of machines and equipment",
+            "Technical and commercial selection of capital goods and production equipment"
+          ]},
+          {"h4": "Leadership skills"},
+          {"p": "For this position we expect in particular:"},
+          {"li": [
+            "Strong customer orientation",
+            "Sound commercial competence",
+            "Ability to lead technically without direct disciplinary authority",
+            "Analytical and structured problem solving",
+            "Cross-functional coordination skills",
+            "Negotiation skills",
+            "Strategic thinking",
+            "Results orientation",
+            "Strong communication and the ability to build lasting business relationships"
+          ]}
+        ]},
+        {"h": "Success in this role", "blocks": [
+          {"p": "The Regional Sales Manager establishes himself or herself as the central operational contact for all regional sales activities, coordinating and steering the daily sales business and the ongoing support of customers and the sales organisation."},
+          {"p": "Strategic questions, particularly significant business opportunities and exceptional matters are escalated to the Group CSO."},
+          {"p": "The position offers a long-term development perspective towards a broader regional sales leadership role, depending on individual performance and the further growth of the organisation."}
+        ]},
+        {"h": "What we offer", "blocks": [
+          {"li": [
+            "A responsible position in regional sales management within an established international machine-building group.",
+            "Direct contact with leading PCB manufacturers and customers from the electronics industry.",
+            "Close cooperation with the teams in Germany and Asia.",
+            "A high degree of personal responsibility and independence in how you organise your work.",
+            "An attractive compensation package with 13 monthly salaries, a performance-based bonus scheme and 30 days of annual leave.",
+            "Comprehensive relocation support, including moving assistance, an apartment, a company car and premium economy return flights to your home country.",
+            "A structured onboarding and technology transfer programme in Germany and Asia, giving you a thorough insight into our technologies, products, customers and organisation.",
+            "Long-term professional development and career opportunities within our Asian organisation."
+          ]}
+        ]}
+      ],
+      "closing": "Ready for the next step in your career? Apply now and become part of our international team."
+    },
+    {
+      "id": "dpmt",
+      "title": "Director of Product Management & Technology Asia",
+      "tagline": "Shape the regional product strategy for PCB manufacturing equipment, reporting to the Group CTO.",
+      "meta": {
+        "location": "Guangdong, China",
+        "reportsTo": "Group CTO"
+      },
+      "subject": "Application: Director of Product Management & Technology Asia",
+      "sections": [
+        {"h": "Overview", "blocks": [
+          {"p": "The Director of Product Management & Technology Asia reports directly to the Group CTO in China and is responsible for translating market, customer, competitor and end-user developments in the technology field into a clear regional product strategy."},
+          {"p": "The role monitors competitor technologies, trends in printed circuit board (PCB) manufacturing, developments at leading customers and the requirements of end users in order to identify future market needs and business opportunities."},
+          {"p": "As the central interface between customers, sales, product management and engineering, the role ensures that market intelligence is systematically translated into product requirements, continuous product improvements and successful new product launches."}
+        ]},
+        {"h": "Your tasks", "blocks": [
+          {"li": [
+            "Developing and maintaining the regional product strategy, including product portfolio management, technology roadmap, product lifecycle management, identification of new business opportunities and product positioning.",
+            "Continuous monitoring of competitor products and technologies, market trends, customer investments, industry developments and manufacturing technologies, and preparation of regular market analyses.",
+            "Building a clear understanding of future customer requirements through customer visits, technical workshops, exchange with our customers' management, industry conferences and benchmark projects, and translating these insights into future product requirements.",
+            "Leading new product launches, including launch planning, technical sales enablement, market introduction, customer demonstrations and pilot installations, to ensure successful commercialisation.",
+            "Supporting the regional sales organisations with technical project support, benchmark evaluations, quotation support, customer presentations and executive-level discussions, and contributing to strategic sales opportunities where required.",
+            "Coordinating product improvement measures by collecting field feedback, analysing machine performance, identifying improvement potential and prioritising engineering requests in close cooperation with Engineering in Germany.",
+            "Acting as the central interface between sales, customers, R&D in Germany, software development and product engineering, and coordinating technical communication across the entire product development process."
+          ]}
+        ]},
+        {"h": "Your profile", "blocks": [
+          {"li": [
+            "University degree in mechanical engineering, electrical engineering, mechatronics, automation technology or a comparable technical discipline.",
+            "At least 10 years of relevant professional experience in machinery and equipment for PCB manufacturing, preferably in mechanical drilling and/or routing technology. Career changers from PCB manufacturing are welcome.",
+            "Sound understanding of PCB manufacturing processes and of customers' production environments.",
+            "Experience with manufacturers such as Via Mechanics, Schmoll, Suzhou Vega Technology, Han's Laser, Ta Liang Technology, Tongtai, Posalux or comparable manufacturers is a strong advantage.",
+            "Strong leadership skills: strategic thinking, product vision, innovative drive, customer orientation, commercial thinking, executive-level communication, analytical skills and cross-functional leadership.",
+            "Willingness to travel frequently within Asia and regularly to Germany."
+          ]}
+        ]},
+        {"h": "What we offer", "blocks": [
+          {"li": [
+            "A senior position in product and technology management within an established international machine-building group, with significant influence on the future product strategy.",
+            "Direct exchange with leading PCB manufacturers and technology leaders across Asia.",
+            "Close cooperation with the R&D, product management and engineering teams in Germany.",
+            "A competitive compensation package with 13 monthly salaries, a performance-based bonus and 30 days of annual leave.",
+            "Relocation support, an apartment, a company car and premium economy return flights to your home country.",
+            "A structured onboarding and technology transfer programme in Germany and Asia, with a thorough insight into our technologies, products, customers and organisation.",
+            "Long-term career prospects within the Asian organisation."
+          ]}
+        ]}
+      ],
+      "closing": "Ready to advance your career? Apply now and become part of our international team."
+    }
+  ]
+}
