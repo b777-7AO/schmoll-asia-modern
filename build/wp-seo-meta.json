@@ -1,5 +1,5 @@
 {
- "_comment": "AIOSEO per-page meta for schmoll-asia.com (24.09.2026). Keys are decoded URL paths. Facts only from the site itself: Schmoll Asia Pacific = Asia-Pacific arm of Schmoll Maschinen (Germany); PCB drilling, routing, direct imaging, X-ray, automation, fixture/probe-card drilling. Applied via POST {restUrl}aioseo/v1/post with X-WP-Nonce. 24.09 later: removed the invented Chinese brand name (site uses Schmoll Asia Pacific in Latin script); added '/' (EN home). 27.09.2026: Chinese company name restored for zh (金富宝亚太) and zh-hk (金富寶亞太): it is the client's own name (printed next to the logo in their LinkedIn graphics, used in their post slugs).",
+ "_comment": "AIOSEO per-page meta for schmoll-asia.com (24.09.2026). Keys are decoded URL paths. Facts only from the site itself: Schmoll Asia Pacific = Asia-Pacific arm of Schmoll Maschinen (Germany); PCB drilling, routing, direct imaging, X-ray, automation, fixture/probe-card drilling. Applied via POST {restUrl}aioseo/v1/post with X-WP-Nonce. 24.09 later: removed the invented Chinese brand name (site uses Schmoll Asia Pacific in Latin script); added '/' (EN home). 27.09.2026: Chinese company name restored for zh (金富宝亚太) and zh-hk (金富寶亞太): it is the client's own name (printed next to the logo in their LinkedIn graphics, used in their post slugs). 08.11.2026: +91 entries for blog posts, video/media/legal pages and product series pages in all 7 languages that still carried the templated site-title suffix or had no description; titles = page/post title + brand suffix, descriptions = first paragraph of the page (dates/hashtags stripped) or a factual one-line fallback.",
  "/application/": {
   "title": "PCB Applications | Schmoll Asia Pacific",
   "description": "PCB manufacturing applications served by Schmoll machines: CCD drilling, backdrilling, substrate, automation, fixture and probe card, X-ray, laser and electric vehicle boards."
@@ -483,5 +483,369 @@
  "/zh-hk/xray-xra3-hk/": {
   "title": "X 光 XRA3 | 金富寶亞太 Schmoll Asia Pacific",
   "description": "Schmoll XRA3 X 光系統：測量並對位內層，實現精準 PCB 鑽孔。"
+ },
+ "/blog/": {
+  "title": "Blog | Schmoll Asia Pacific",
+  "description": "Blog – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the Schmoll Maschinen group company for Asia"
+ },
+ "/celebrating-a-strong-partnership-larry-gao-2/": {
+  "title": "Celebrating a Strong Partnership: Larry… | Schmoll Asia Pacific",
+  "description": "​ Larry Gao’s drift car sponsored by Schmoll"
+ },
+ "/cpca-show-2024-a-resounding-success-for-schmoll-asia-pacific/": {
+  "title": "Schmoll Asia Pacific Showcases PCB… | Schmoll Asia Pacific",
+  "description": "Schmoll Asia Pacific Showcases PCB Technology at CPCA 2024 – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the Schmoll Maschinen"
+ },
+ "/difference-between-schmoll-asia-and-schmoll-maschinen/": {
+  "title": "Difference between Schmoll Asia and… | Schmoll Asia Pacific",
+  "description": "The Difference between Schmoll Asia and Schmoll Maschinen In the fast-paced world of"
+ },
+ "/gtc-purchase/": {
+  "title": "General Term of Conditions Purchase | Schmoll Asia Pacific",
+  "description": "General Term of Conditions Purchase – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the Schmoll Maschinen group company for Asia"
+ },
+ "/gtc-services/": {
+  "title": "General Terms and Conditions of Services | Schmoll Asia Pacific",
+  "description": "General Terms and Conditions of Services – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the Schmoll Maschinen group company for"
+ },
+ "/hkpca-2025-schmoll-asia-best-pcb-equipment-solutions-in-asia-30-years-anniversary/": {
+  "title": "HKPCA 2025… | Schmoll Asia Pacific",
+  "description": "HKPCA SHOW 2025 | Schmoll Asia 30 year anniversary Schmoll Asia Celebrates 30 years"
+ },
+ "/ko/schmoll-asia-pacific-신규-웹사이트/": {
+  "title": "Schmoll Asia Pacific 신규 웹사이트 | Schmoll Asia Pacific",
+  "description": "새로운 Schmoll Asia Pacific 웹사이트 출시 기념: PCB 혁신의 허브 새로운 Schmoll Asia Pacific 웹사이트의 출시를 기쁘게"
+ },
+ "/ko/schmoll-asia와-schmoll-maschinen의-차이점/": {
+  "title": "Schmoll Asia와 Schmoll Maschinen의 차이점 | Schmoll Asia Pacific",
+  "description": "전자 제조의 빠르게 변화하는 세계에서, 정밀성과 신뢰성은 타협할 수 없는 요소입니다. 고급 기술 기기"
+ },
+ "/ko/wus-인쇄-회로의-확장은-schmoll-asia-pacific의-기술로-추진됩니다/": {
+  "title": "WUS 인쇄 회로의 확장은 Schmoll Asia Pacific의 기술로… | Schmoll Asia Pacific",
+  "description": "Schmoll Maschinen의 제품은 WUS 인쇄 회로 기판 제조 선택의 일부입니다"
+ },
+ "/ko/강력한-파트너십을-축하합니다-larry-gao/": {
+  "title": "강력한 파트너십을 축하합니다: Larry Gao | Schmoll Asia Pacific",
+  "description": "강력한 파트너십을 축하합니다: Larry Gao – Schmoll Asia Pacific: Schmoll Maschinen 그룹의 아시아 법인, PCB 드릴링·라우팅·레이저 장비."
+ },
+ "/ko/개인정보-보호정책/": {
+  "title": "개인정보 보호정책 | Schmoll Asia Pacific",
+  "description": "Schmoll Asia Pacific 개인정보 보호정책Schmoll Asia Pacific은 귀하의 개인정보를 보호하기 위해 최선을 다하고 있습니다. 본 개인정보 보호정책은 귀하가 당사 웹사이트를 방문할 때 당사가 귀하의 정보를 수집, 사용, 공개 및"
+ },
+ "/ko/동영상/": {
+  "title": "동영상 | Schmoll Asia Pacific",
+  "description": "동영상: Schmoll Asia Pacific의 뉴스, 전시회 및 PCB 장비 인사이트"
+ },
+ "/ko/미디어/": {
+  "title": "미디어 | Schmoll Asia Pacific",
+  "description": "미디어 – Schmoll Asia Pacific: Schmoll Maschinen 그룹의 아시아 법인, PCB 드릴링·라우팅·레이저 장비."
+ },
+ "/ko/블로그/": {
+  "title": "블로그 | Schmoll Asia Pacific",
+  "description": "블로그 – Schmoll Asia Pacific: Schmoll Maschinen 그룹의 아시아 법인, PCB 드릴링·라우팅·레이저 장비"
+ },
+ "/ko/사용-기간/": {
+  "title": "사용 기간 | Schmoll Asia Pacific",
+  "description": "본 웹사이트에 포함된 정보는 일반적인 정보 제공을 목적으로 합니다. 이 정보는 Schmoll Asia Pacific에서 제공하며, 정보를 최신 상태로 유지하고 정확하게 하려고 노력하지만, 웹사이트 또는 웹사이트에 포함된 정보, 제품, 서비스 또는 관련 그래픽의 완전성"
+ },
+ "/ko/애플리케이션/": {
+  "title": "애플리케이션 | Schmoll Asia Pacific",
+  "description": "애플리케이션 – Schmoll Asia Pacific: Schmoll Maschinen 그룹의 아시아 법인, PCB 드릴링·라우팅·레이저 장비"
+ },
+ "/meet-schmoll-asia-pacific-at-kpca-show-2026/": {
+  "title": "Meet Schmoll Asia Pacific at KPCA Show… | Schmoll Asia Pacific",
+  "description": "We’re heading to South Korea for the KPCA Show 2026"
+ },
+ "/ms/aplikasi/": {
+  "title": "Aplikasi | Schmoll Asia Pacific",
+  "description": "Terokai bagaimana teknologi inovatif kami dapat meningkatkan pengeluaran anda dan memastikan prestasi yang unggul"
+ },
+ "/ms/blog-ms/": {
+  "title": "Blog M | Schmoll Asia Pacific",
+  "description": "Blog M – Schmoll Asia Pacific, syarikat kumpulan Schmoll Maschinen untuk Asia: peralatan penggerudian, penghalaan dan laser PCB"
+ },
+ "/ms/dasar-privasi/": {
+  "title": "Dasar Privasi | Schmoll Asia Pacific",
+  "description": "Di Schmoll Asia Pacific, kami komited untuk melindungi privasi anda. Polisi Privasi ini menerangkan bagaimana kami mengumpul, menggunakan, mendedahkan"
+ },
+ "/ms/laman-web-baru-schmoll-asia-pacific/": {
+  "title": "Laman Web Baru Schmoll Asia Pacific | Schmoll Asia Pacific",
+  "description": "Meraikan Pelancaran Laman Web Baru Schmoll Asia Pacific: Pusat Inovasi"
+ },
+ "/ms/media/": {
+  "title": "Media M | Schmoll Asia Pacific",
+  "description": "Media M – Schmoll Asia Pacific, syarikat kumpulan Schmoll Maschinen untuk Asia: peralatan penggerudian, penghalaan dan laser PCB."
+ },
+ "/ms/meraikan-perkongsian-kukuh-larry-gao/": {
+  "title": "Meraikan Perkongsian Kukuh: Larry Gao | Schmoll Asia Pacific",
+  "description": "Kereta drift Larry Gao ditaja oleh Schmoll"
+ },
+ "/ms/perbezaan-antara-schmoll-asia-dan-schmoll-maschinen/": {
+  "title": "Perbezaan antara Schmoll Asia dan… | Schmoll Asia Pacific",
+  "description": "Perbezaan antara Schmoll Asia dan – Schmoll Asia Pacific, syarikat kumpulan Schmoll Maschinen untuk Asia: peralatan penggerudian, penghalaan dan laser PCB."
+ },
+ "/ms/perkembangan-wus-printed-circuit-didorong-oleh-teknologi-schmoll-asia-pacific/": {
+  "title": "Perkembangan WUS Printed Circuit… | Schmoll Asia Pacific",
+  "description": "Perkembangan WUS Printed Circuit Didorong oleh Teknologi Schmoll Asia Pacific. – Schmoll Asia Pacific, syarikat kumpulan Schmoll Maschinen untuk Asia"
+ },
+ "/ms/terma-penggunaan/": {
+  "title": "Terma Penggunaan | Schmoll Asia Pacific",
+  "description": "Penafian Laman Web untuk Schmoll Asia Pacific"
+ },
+ "/ms/video/": {
+  "title": "Video | Schmoll Asia Pacific",
+  "description": "Video daripada Schmoll Asia Pacific: berita, pameran dan pandangan tentang peralatan PCB"
+ },
+ "/ms/xray-xra3-ms/": {
+  "title": "Xray – XRA3 | Schmoll Asia Pacific",
+  "description": "Xray – XRA3 – Schmoll Asia Pacific, syarikat kumpulan Schmoll Maschinen untuk Asia: peralatan penggerudian, penghalaan dan laser PCB"
+ },
+ "/non-disclosure-agreement/": {
+  "title": "Non-Disclosure Agreement | Schmoll Asia Pacific",
+  "description": "Non-Disclosure Agreement – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the Schmoll Maschinen group company for Asia"
+ },
+ "/privacy-policy/": {
+  "title": "Privacy Policy | Schmoll Asia Pacific",
+  "description": "At Schmoll Asia Pacific, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your"
+ },
+ "/schmoll-asia-pacific-concludes-a-successful-year-at-the-hkpca-show-2024/": {
+  "title": "Schmoll Asia Pacific Concludes a… | Schmoll Asia Pacific",
+  "description": "Schmoll Asia Pacific Concludes a Successful Year at the HKPCA Show 2024 – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the"
+ },
+ "/schmoll-asia-pacific-new-website/": {
+  "title": "Schmoll Asia Pacific New Website | Schmoll Asia Pacific",
+  "description": "Celebrating the Launch of the New Schmoll Asia Pacific Website: A Hub for PCB"
+ },
+ "/schmoll-asia-pacifics-success-at-tpca-show-2024/": {
+  "title": "Schmoll Asia Pacific’s Success at TPCA… | Schmoll Asia Pacific",
+  "description": "Schmoll Asia Pacific’s Team at the Booth"
+ },
+ "/successful-participation-at-cpca-show-2025-in-shanghai/": {
+  "title": "Successful Participation at CPCA Show… | Schmoll Asia Pacific",
+  "description": "Successful Participation at CPCA Show 2025 in Shanghai – PCB drilling, routing and laser equipment from Schmoll Asia Pacific, the Schmoll Maschinen"
+ },
+ "/term-of-use/": {
+  "title": "Term Of Use | Schmoll Asia Pacific",
+  "description": "The information contained in this website is for general information purposes only. The information is provided by Schmoll Asia Pacific and while we"
+ },
+ "/th/การขยายตัวของ-wus-printed-circuit-ขับเคล/": {
+  "title": "การขยายตัวของ WUS Printed Circuit… | Schmoll Asia Pacific",
+  "description": "การขยายตัวของ WUS Printed Circuit ขับเคลื่อนด้วยเทคโนโลยีจาก Schmoll Asia Pacific – Schmoll Asia Pacific บริษัทในเครือ Schmoll Maschinen สำหรับเอเชีย"
+ },
+ "/th/ข้อตกลงในการใช้งาน/": {
+  "title": "ข้อตกลงในการใช้งาน | Schmoll Asia Pacific",
+  "description": "คำสงวนสิทธิ์บนเว็บไซต์สำหรับ Schmoll Asia Pacific"
+ },
+ "/th/ความแตกต่างระหว่าง-schmoll-asia-แล/": {
+  "title": "ความแตกต่างระหว่าง Schmoll Asia และ… | Schmoll Asia Pacific",
+  "description": "ความแตกต่างระหว่าง Schmoll Asia และ Schmoll Maschinen – Schmoll Asia Pacific บริษัทในเครือ Schmoll Maschinen สำหรับเอเชีย: เครื่องเจาะ เร้าติ้ง"
+ },
+ "/th/นโยบายความเป็นส่วนตัว/": {
+  "title": "นโยบายความเป็นส่วนตัว | Schmoll Asia Pacific",
+  "description": "ที่ Schmoll Asia Pacific เรามุ่งมั่นในการปกป้องความเป็นส่วนตัวของคุณ นโยบายความเป็นส่วนตัวนี้จะอธิบายถึงวิธีการที่เรารวบรวม ใช้"
+ },
+ "/th/บล็อก/": {
+  "title": "บล็อก | Schmoll Asia Pacific",
+  "description": "บล็อก – Schmoll Asia Pacific บริษัทในเครือ Schmoll Maschinen สำหรับเอเชีย: เครื่องเจาะ เร้าติ้ง และเลเซอร์สำหรับ PCB"
+ },
+ "/th/วิดีโอ/": {
+  "title": "วิดีโอ | Schmoll Asia Pacific",
+  "description": "วิดีโอ จาก Schmoll Asia Pacific: ข่าวสาร งานแสดงสินค้า และบทความเกี่ยวกับอุปกรณ์ผลิต PCB"
+ },
+ "/th/สื่อ/": {
+  "title": "สื่อ | Schmoll Asia Pacific",
+  "description": "สื่อ – Schmoll Asia Pacific บริษัทในเครือ Schmoll Maschinen สำหรับเอเชีย: เครื่องเจาะ เร้าติ้ง และเลเซอร์สำหรับ PCB"
+ },
+ "/th/เฉลิมฉลองความร่วมมือที/": {
+  "title": "เฉลิมฉลองความร่วมมือที่แข็งแกร่ง: Larry… | Schmoll Asia Pacific",
+  "description": "กรกฎาคม 1, 2024 รถดริฟท์ของ Larry Gao ที่ได้รับการสนับสนุนโดย Schmoll"
+ },
+ "/th/เว็บไซต์ใหม่ของ-schmoll-asia-pacific/": {
+  "title": "เว็บไซต์ใหม่ของ Schmoll Asia Pacific | Schmoll Asia Pacific",
+  "description": "มิถุนายน 28, 2024 เฉลิมฉลองการเปิดตัวเว็บไซต์ใหม่ของ Schmoll Asia Pacific"
+ },
+ "/th/แอปพลิเคชัน/": {
+  "title": "แอปพลิเคชัน | Schmoll Asia Pacific",
+  "description": "สำรวจว่าเทคโนโลยีที่เป็นนวัตกรรมของเราสามารถปรับปรุงการผลิตของคุณและรับรองประสิทธิภาพที่เหนือกว่าได้อย่างไร"
+ },
+ "/theca-2026-bangkok-here-we-come/": {
+  "title": "Bangkok Here We Come: Thailand… | Schmoll Asia Pacific",
+  "description": "Bangkok Here We Come Thailand Electronics & Circuit Asia 2026Thailand Electronics &"
+ },
+ "/vi/blog-vi/": {
+  "title": "Blog | Schmoll Asia Pacific",
+  "description": "Blog – Schmoll Asia Pacific, công ty thuộc tập đoàn Schmoll Maschinen tại châu Á: thiết bị khoan, phay và laser PCB"
+ },
+ "/vi/chinh-sach-bao-mat/": {
+  "title": "Chính sách bảo mật | Schmoll Asia Pacific",
+  "description": "At Schmoll Asia Pacific, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your"
+ },
+ "/vi/dieu-khoan-su-dung/": {
+  "title": "Điều khoản sử dụng | Schmoll Asia Pacific",
+  "description": "Website Disclaimer for Schmoll Asia Pacific"
+ },
+ "/vi/truyen-thong/": {
+  "title": "Truyền thông | Schmoll Asia Pacific",
+  "description": "Truyền thông – Schmoll Asia Pacific, công ty thuộc tập đoàn Schmoll Maschinen tại châu Á: thiết bị khoan, phay và laser PCB."
+ },
+ "/vi/ung-dung/": {
+  "title": "Ứng dụng | Schmoll Asia Pacific",
+  "description": "Explore how our innovative technology can enhance your production and ensure superior performance"
+ },
+ "/vi/video-vi/": {
+  "title": "Video | Schmoll Asia Pacific",
+  "description": "Video từ Schmoll Asia Pacific: tin tức, triển lãm và góc nhìn về thiết bị sản xuất PCB"
+ },
+ "/video-schmoll-asia-pacific/": {
+  "title": "Video Schmoll Asia Pacific | Schmoll Asia Pacific",
+  "description": "Video Schmoll Asia Pacific from Schmoll Asia Pacific: news, exhibitions and insights on PCB drilling and manufacturing equipment"
+ },
+ "/wus-printed-circuits-expansion-powered-by-schmoll-asia-pacifics-cutting-edge-technology/": {
+  "title": "WUS Printed Circuit’s Expansion Powered… | Schmoll Asia Pacific",
+  "description": "WUS Printed Circuit's Expansion Powered by Schmoll Asia Pacific’s Technology Schmoll Maschinen’s"
+ },
+ "/zh-hk/wus印刷電路的擴展由金富寶集團的技術驅動/": {
+  "title": "WUS印刷電路的擴展由金富寶集團的技術驅動 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "WUS印刷電路的擴展由金富寶集團的技術驅動 – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/使用期限-hk/": {
+  "title": "使用期限 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "本網站所載資料僅供一般參考之用。資料由Schmoll Asia Pacific提供，儘管我們盡力維持資料的最新性和正確性，但對於本網站的完整性、準確性、可靠性、適用性、或本網站所載的資料、產品、服務或相關圖片的可用性，我們不作任何明示或暗示的聲明或保證。因此，您必須自行承擔依賴此類資訊的風險。"
+ },
+ "/zh-hk/媒體/": {
+  "title": "媒體 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "媒體 – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/慶祝強大的夥伴關係：-larry-gao/": {
+  "title": "慶祝強大的夥伴關係： Larry Gao | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "慶祝強大的夥伴關係： Larry Gao – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/應用-hk/": {
+  "title": "應用 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "應用 – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/網誌/": {
+  "title": "網誌 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "網誌 – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/視頻/": {
+  "title": "視頻 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "視頻：金富寶亞太（Schmoll Asia Pacific）的新聞、展會與 PCB 設備資訊。"
+ },
+ "/zh-hk/金富寶亞太和schmoll-maschinen之間的區別/": {
+  "title": "金富寶亞太和Schmoll Maschinen之間的區別 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "金富寶亞太和Schmoll Maschinen之間的區別 – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/金富寶亞太有限公司於-2024-年-tpca-展取得成功/": {
+  "title": "金富寶亞太有限公司於 2024 年 TPCA 展取得成功 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "金富寶亞太有限公司於 2024 年 TPCA 展取得成功 – 金富寶亞太（Schmoll Asia Pacific）：Schmoll Maschinen 集團旗下的亞洲公司，提供 PCB 鑽孔、銑削與雷射設備。"
+ },
+ "/zh-hk/金富寶集團市場上最好的選擇-花崗岩/": {
+  "title": "金富寶集團市場上最好的選擇—花崗岩 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "花崗岩|金富寶集團在市場上的最佳選擇 德國阿斯拉的Reitz Natursteintechnik生產倉庫。"
+ },
+ "/zh-hk/金富寶集團新網站/": {
+  "title": "金富寶集團新網站 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "慶祝全新金富寶集團網站正式啟用： PCB 創新的樞紐 我們很高興地宣佈金富寶集團推出全新網站！這個新平台標誌著我們持續致力於提供最先進的 PCB 解決方案和無與倫比的客戶支持的一個重要里程碑。"
+ },
+ "/zh-hk/隱私政策/": {
+  "title": "隱私政策 | 金富寶亞太 Schmoll Asia Pacific",
+  "description": "在Schmoll亞太，我們承諾保護您的隱私。本隱私政策概述當您訪問我們的網站時，我們如何收集、使用、披露和保護您的信息。請仔細閱讀本政策，以了解我們對您的個人資料的做法。"
+ },
+ "/zh/亚洲最佳-pcb-设备供应商-schmoll-asia-pacific-在-hkpca-2025-庆祝-30-周年/": {
+  "title": "亚洲最佳 PCB 设备供应商 —— Schmoll Asia… | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "亚洲最佳 PCB 设备供应商 —— 金富宝亚太在 HKPCA 2025 庆祝 30 周年 HKPCA 2025 与金富宝亚太 30 周年 亚洲最佳 PCB 设备精彩亮相"
+ },
+ "/zh/使用期限/": {
+  "title": "使用期限 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "本网站所含信息仅供一般参考之用。这些信息由施谟尔亚太公司提供，尽管我们努力保持信息的最新性和正确性，但对于网站或网站上的信息、产品、服务或相关图片的完整性、准确性、可靠性、适用性或可用性，我们不作任何明示或暗示的陈述或保证。因此，您对此类信息的任何依赖均由您自行承担风险。"
+ },
+ "/zh/媒体/": {
+  "title": "媒体 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "媒体 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/应用-2/": {
+  "title": "应用 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "应用 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/应用-3/": {
+  "title": "应用 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "Explore how our innovative technology can enhance your production and ensure superior performance"
+ },
+ "/zh/应用-4/": {
+  "title": "应用 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "Explore how our innovative technology can enhance your production and ensure superior performance"
+ },
+ "/zh/应用-5/": {
+  "title": "应用 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "应用 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/应用/": {
+  "title": "应用 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "应用 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/应用范围/": {
+  "title": "应用 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "应用 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/慶祝強大的夥伴關係：-larry-gao-2/": {
+  "title": "慶祝強大的夥伴關係： Larry Gao | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "慶祝強大的夥伴關係： Larry Gao – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/招聘-2/": {
+  "title": "招聘 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "在施莫尔开始您的职业生涯 在 金富寶集團工作，您将拥有一个充满活力、丰富多彩的工作环境，创新和发展将成为公司的第一要务。作为行业领先企业，金富寶集團为员工提供了无与伦比的专业发展和职业晋升机会。"
+ },
+ "/zh/沪士电子股份有限公司扩展项目采用schmoll-asia-pacific技术/": {
+  "title": "沪士电子股份有限公司扩展项目采用Schmoll Asia… | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "沪士电子股份有限公司扩展项目采用金富宝亚太技术 Schmoll Maschinen产品成为沪士电子PCB制造选择的一部分。"
+ },
+ "/zh/网志/": {
+  "title": "网志 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "网志 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/自动化系列/": {
+  "title": "自动化系列 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "自动化系列 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/花岗岩是金富宝亚太市场上最好的选择/": {
+  "title": "花岗岩：金富宝亚太的最佳选择 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "花岗岩是金富宝亚太市场上最好的选择 德国阿斯拉的Reitz-natursteintechnik生产仓库。"
+ },
+ "/zh/视频-2/": {
+  "title": "视频 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "视频：金富宝亚太（Schmoll Asia Pacific）的新闻、展会与 PCB 设备资讯。"
+ },
+ "/zh/视频/": {
+  "title": "视频 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "视频：金富宝亚太（Schmoll Asia Pacific）的新闻、展会与 PCB 设备资讯。"
+ },
+ "/zh/金富宝亚太-在-2024-hkpca-展会圆满结束：引领-pcb-制造创新/": {
+  "title": "金富宝亚太 在 2024 HKPCA 展会圆满结束：引领 PCB… | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "在 HKPCA 展会圆满收官 2024 金富宝亚太 已成功结束了在 2024 HKPCA 展会的参展，展会于 12 月 4 日至 6"
+ },
+ "/zh/金富宝亚太与-schmoll-maschinen-的区别-2/": {
+  "title": "金富宝亚太与 Schmoll Maschinen 的区别 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "金富宝亚太与 Schmoll Maschinen 的区别 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/金富宝亚太于-2024-年-tpca-展会取得成功/": {
+  "title": "金富宝亚太于 2024 年 TPCA 展会取得成功 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "金富宝亚太于 2024 年 TPCA 展会取得成功 – 金富宝亚太（Schmoll Asia Pacific）：Schmoll Maschinen 集团旗下的亚洲公司，提供 PCB 钻孔、铣削与激光设备。"
+ },
+ "/zh/金富宝亚太圆满收官-2025-cpca-展会之旅/": {
+  "title": "金富宝亚太圆满收官 2025 CPCA 展会之旅 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "金富宝亚太在**2025 年中国电子电路展览会（CPCA Show 2025）**上的精彩亮相圆满落幕。展会于 3 月 24 日至"
+ },
+ "/zh/金富寶集團設有新網站/": {
+  "title": "金富寶集團設有新網站 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "庆祝施莫尔亚太地区新网站上线： 印刷电路板创新中心 我们非常高兴地宣布全新的施莫尔亚太网站正式上线！这一新平台是我们不断致力于提供最先进的印刷电路板解决方案和无与伦比的客户支持的重要里程碑。"
+ },
+ "/zh/隐私政策/": {
+  "title": "隐私政策 | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "在施莫尔亚太公司，我们致力于保护您的隐私。本隐私政策概述了当您访问我们的网站时，我们如何收集、使用、披露和保护您的信息。请仔细阅读本政策，以了解我们对您个人数据的处理方式。"
+ },
+ "/zh/面向-ai-数据服务器时代-推动-pcb-技术持续发展/": {
+  "title": "面向 AI 数据服务器时代 推动 PCB 技术持续发展 CPCA… | 金富宝亚太 Schmoll Asia Pacific",
+  "description": "CPCA Show 2026 亮相 CPCA Show 2026 金富宝亚太圆满完成了此次 CPCA Show 2026 之行。此次展会再次为我们提供了一个宝贵的平台，与来自"
  }
 }
