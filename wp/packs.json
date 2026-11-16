@@ -1,0 +1,738 @@
+{
+"brochures/Schmoll-Asia-Pacific-GTC-Purchase.pdf": [
+7,
+351047
+],
+"brochures/Schmoll-Asia-Pacific-GTC-Service.pdf": [
+7,
+352225
+],
+"brochures/Schmoll-Asia-Pacific-NDA.pdf": [
+6,
+505735
+],
+"brochures/Schmoll-Automation-Brochure.pdf": [
+11,
+1221086
+],
+"brochures/Schmoll-CombiDrill-Brochure.pdf": [
+11,
+1357615
+],
+"brochures/Schmoll-Eagle-Brochure.pdf": [
+11,
+1425825
+],
+"brochures/Schmoll-Falcon-Brochure.pdf": [
+10,
+1531291
+],
+"brochures/Schmoll-Hawk-Brochure.pdf": [
+10,
+1545950
+],
+"brochures/Schmoll-MDI-Brochure.pdf": [
+11,
+1308628
+],
+"brochures/Schmoll-ProbeCard-Brochure.pdf": [
+10,
+1590316
+],
+"brochures/Schmoll-RMXY-Brochure.pdf": [
+10,
+1741961
+],
+"brochures/Schmoll-Raptor-Brochure.pdf": [
+10,
+1431725
+],
+"brochures/Schmoll-XRA3-Brochure.pdf": [
+11,
+1330290
+],
+"img/about-cpca-2026.jpg": [
+6,
+473476
+],
+"img/about-hero-cpca.jpg": [
+5,
+811294
+],
+"img/apps/automation.png": [
+4,
+1294987
+],
+"img/apps/backdrilling.png": [
+4,
+1278542
+],
+"img/apps/ccd.png": [
+5,
+1058755
+],
+"img/apps/ev.png": [
+4,
+1267868
+],
+"img/apps/fixture.png": [
+1,
+2406208
+],
+"img/apps/laser.png": [
+3,
+1234306
+],
+"img/apps/substrate.png": [
+3,
+1360710
+],
+"img/apps/xray.png": [
+2,
+1518986
+],
+"img/brochures/automation-back.jpg": [
+6,
+409040
+],
+"img/brochures/automation-front.jpg": [
+7,
+268419
+],
+"img/brochures/combidrill-back.jpg": [
+7,
+372518
+],
+"img/brochures/combidrill-front.jpg": [
+7,
+277284
+],
+"img/brochures/eagle-back.jpg": [
+8,
+154549
+],
+"img/brochures/eagle-front.jpg": [
+7,
+323108
+],
+"img/brochures/falcon-back.jpg": [
+6,
+473346
+],
+"img/brochures/falcon-front.jpg": [
+7,
+314243
+],
+"img/brochures/hawk-back.jpg": [
+8,
+150532
+],
+"img/brochures/hawk-front.jpg": [
+8,
+130199
+],
+"img/brochures/mdi-back.jpg": [
+6,
+403214
+],
+"img/brochures/mdi-front.jpg": [
+8,
+123542
+],
+"img/brochures/probecard-back.jpg": [
+6,
+385487
+],
+"img/brochures/probecard-front.jpg": [
+8,
+151820
+],
+"img/brochures/raptor-back.jpg": [
+2,
+386831
+],
+"img/brochures/raptor-front.jpg": [
+7,
+331225
+],
+"img/brochures/rmxy-back.jpg": [
+8,
+203819
+],
+"img/brochures/rmxy-front.jpg": [
+8,
+103460
+],
+"img/brochures/xra3-back.jpg": [
+6,
+411376
+],
+"img/brochures/xra3-front.jpg": [
+7,
+346562
+],
+"img/earth-dark.jpg": [
+8,
+94795
+],
+"img/facility-1.jpg": [
+8,
+94623
+],
+"img/facility-2.jpg": [
+8,
+79397
+],
+"img/facility-3.jpg": [
+8,
+100477
+],
+"img/gallery-1.jpg": [
+8,
+100477
+],
+"img/gallery-2.jpg": [
+8,
+79397
+],
+"img/gallery-3.jpg": [
+8,
+94623
+],
+"img/gallery-4.jpg": [
+8,
+49305
+],
+"img/history/1943.jpg": [
+9,
+7030
+],
+"img/history/1962.jpg": [
+8,
+28154
+],
+"img/history/1985.jpg": [
+9,
+20315
+],
+"img/history/1992.jpg": [
+1,
+4998
+],
+"img/history/1993-automation.jpg": [
+9,
+6426
+],
+"img/history/1993-kunz.jpeg": [
+8,
+62165
+],
+"img/history/1999.png": [
+9,
+14110
+],
+"img/history/2004.jpg": [
+9,
+15684
+],
+"img/history/2006.png": [
+8,
+26749
+],
+"img/history/2010.jpg": [
+8,
+34448
+],
+"img/history/2015.png": [
+9,
+15632
+],
+"img/history/2023.jpg": [
+8,
+31279
+],
+"img/linkedin/7455907793003331584-0.jpg": [
+8,
+75728
+],
+"img/linkedin/7462754702347141122-0.jpg": [
+6,
+130233
+],
+"img/linkedin/7467579139282145280-0.jpg": [
+8,
+112494
+],
+"img/linkedin/7468568545791246336-0.jpg": [
+8,
+60279
+],
+"img/linkedin/7470808571308523520-0.jpg": [
+8,
+127149
+],
+"img/linkedin/7471105763684368384-0.jpg": [
+8,
+58797
+],
+"img/linkedin/7473641723848658944-0.jpg": [
+5,
+130890
+],
+"img/linkedin/7476174916208324608-0.jpg": [
+8,
+91277
+],
+"img/linkedin/7477282495827329024-0.jpg": [
+8,
+63651
+],
+"img/linkedin/7480519090714017792-0.jpg": [
+8,
+66760
+],
+"img/linkedin/7483037638996762624-0.jpg": [
+8,
+93548
+],
+"img/linkedin/7485597001016074240-0.jpg": [
+8,
+76641
+],
+"img/linkedin/7490677983779893248-0.jpg": [
+8,
+108242
+],
+"img/linkedin/7493214696838205441-0.jpg": [
+8,
+117727
+],
+"img/linkedin/7495751413998731265-0.jpg": [
+8,
+96398
+],
+"img/linkedin/7497925740638957569-0.jpg": [
+8,
+89520
+],
+"img/linkedin/7500824841965576192-0.jpg": [
+8,
+100900
+],
+"img/linkedin/7505525817104588800-0.jpg": [
+8,
+68282
+],
+"img/linkedin/7510971703469023233-0.jpg": [
+8,
+104147
+],
+"img/linkedin/7513161130538676225-0.jpg": [
+8,
+94695
+],
+"img/linkedin/7515320356497154048-0.jpg": [
+8,
+89795
+],
+"img/linkedin/7516060232146395136-0.jpg": [
+8,
+46810
+],
+"img/linkedin/7520408887020285952-0.jpg": [
+8,
+74723
+],
+"img/linkedin/7528003934037254144-0.jpg": [
+8,
+52372
+],
+"img/logo-sap-30yrs.jpg": [
+8,
+43577
+],
+"img/logo-sap-white.png": [
+9,
+19386
+],
+"img/logo-sap.png": [
+8,
+36549
+],
+"img/machines/automation.jpg": [
+7,
+277645
+],
+"img/machines/automation.webp": [
+5,
+774516
+],
+"img/machines/combidrill.jpg": [
+7,
+288125
+],
+"img/machines/combidrill.webp": [
+2,
+1628298
+],
+"img/machines/eagle.jpg": [
+7,
+372992
+],
+"img/machines/eagle.webp": [
+8,
+118774
+],
+"img/machines/falcon.jpg": [
+7,
+375365
+],
+"img/machines/falcon.webp": [
+8,
+44026
+],
+"img/machines/hawk.jpg": [
+7,
+256224
+],
+"img/machines/hawk.webp": [
+8,
+156320
+],
+"img/machines/mdi.jpg": [
+7,
+231008
+],
+"img/machines/mdi.webp": [
+5,
+959622
+],
+"img/machines/probecard.jpg": [
+7,
+297595
+],
+"img/machines/probecard.webp": [
+5,
+849760
+],
+"img/machines/raptor.jpg": [
+6,
+390880
+],
+"img/machines/raptor.webp": [
+8,
+157814
+],
+"img/machines/rmxy.jpg": [
+6,
+390880
+],
+"img/machines/rmxy.webp": [
+3,
+1416412
+],
+"img/machines/xra3.jpg": [
+7,
+373119
+],
+"img/machines/xra3.webp": [
+5,
+1157756
+],
+"img/news/12b12f488a604db063a32c8e3b2bbe-e1730965959632.jpg": [
+7,
+360672
+],
+"img/news/1730880120741.jpeg": [
+8,
+227881
+],
+"img/news/1731319205191.jpeg": [
+8,
+73376
+],
+"img/news/640.jpeg": [
+8,
+59083
+],
+"img/news/640.webp": [
+8,
+48438
+],
+"img/news/content.webp": [
+1,
+1787936
+],
+"img/news/cpca2026-march_group.jpg": [
+5,
+889824
+],
+"img/news/cpca3.webp": [
+8,
+200932
+],
+"img/news/cpca5.webp": [
+8,
+112898
+],
+"img/news/dsc01154-min.jpg": [
+8,
+94623
+],
+"img/news/dsc01241-hdr.jpg": [
+8,
+142298
+],
+"img/news/eingang-screen-min-e1724321690420.jpg": [
+8,
+159085
+],
+"img/news/forma@2x.png": [
+2,
+585
+],
+"img/news/granit_reitz_granit_vorteile_content.jpg.webp": [
+7,
+227912
+],
+"img/news/hkpca-2025.jpeg": [
+7,
+285751
+],
+"img/news/hkpca-show-2025_30-years.webp": [
+8,
+120460
+],
+"img/news/img_3433.jpeg": [
+8,
+202027
+],
+"img/news/img_7493.jpeg": [
+8,
+213167
+],
+"img/news/img_9035.jpeg": [
+5,
+767252
+],
+"img/news/img_9174.jpeg": [
+5,
+798467
+],
+"img/news/montagehalle_pic-mi_00_2012_print-l_ge.jpg": [
+6,
+681559
+],
+"img/news/schmoll-baut-neue-firmenzentrale-in-roedermark-erste-produktion-ab-herbst-2026-geplant-1.jpg": [
+6,
+463693
+],
+"img/news/screenshot-2024-07-01-at-16.12.36-e1719821966471.jpg": [
+8,
+40614
+],
+"img/news/screenshot-2024-08-07-at-12.56.17-min.jpg": [
+6,
+384435
+],
+"img/news/screenshot-2024-08-07-at-13.39.15-min.jpg": [
+7,
+343981
+],
+"img/news/t-min-e1724320574972.png": [
+1,
+1959966
+],
+"img/news/untitled-design-154.jpg": [
+8,
+118019
+],
+"img/news/untitled-design-157-e1726077863385.jpg": [
+8,
+94560
+],
+"img/news/untitled-design-90.jpg": [
+8,
+61501
+],
+"img/news/untitled-design-91-1-e1719561415402.jpg": [
+8,
+34270
+],
+"img/news/untitled-design-92-e1719565802226.png": [
+8,
+194683
+],
+"img/news/untitled-design-99.webp": [
+8,
+68606
+],
+"img/news/wechatimg191.jpg": [
+7,
+346567
+],
+"img/news/wechatimg29-2-e1719822512279.jpg": [
+8,
+69401
+],
+"img/news/wechatimg48-2-e1719821755870.jpg": [
+8,
+46602
+],
+"img/news/wechatimg484-e1745310805761.jpg": [
+6,
+634754
+],
+"img/news/whatsapp-image-2024-09-05-at-09.33.00-1.jpeg": [
+8,
+109299
+],
+"img/news/whatsapp-image-2025-12-03-at-14.14.18.jpeg": [
+7,
+245941
+],
+"img/pcb-pattern.png": [
+3,
+10614
+],
+"img/slides/slide-1.jpg": [
+4,
+497376
+],
+"img/slides/slide-10.jpg": [
+7,
+89806
+],
+"img/slides/slide-2.jpg": [
+7,
+291087
+],
+"img/slides/slide-3.jpg": [
+1,
+354320
+],
+"img/slides/slide-4.jpg": [
+6,
+417863
+],
+"img/slides/slide-5.jpg": [
+7,
+285534
+],
+"img/slides/slide-6.jpg": [
+6,
+566751
+],
+"img/slides/slide-7.jpg": [
+6,
+587175
+],
+"img/slides/slide-8.jpg": [
+6,
+489113
+],
+"img/slides/slide-9.jpg": [
+7,
+313770
+],
+"img/team-banner.jpg": [
+8,
+76672
+],
+"img/team-hero.jpg": [
+8,
+49305
+],
+"img/team/cynthia-hung.jpg": [
+8,
+27225
+],
+"img/team/elmar-streich.jpg": [
+8,
+22638
+],
+"img/team/enno-bronnmann.jpg": [
+8,
+25431
+],
+"img/team/eric-thum.jpg": [
+8,
+31313
+],
+"img/team/jacky-yang.jpg": [
+8,
+22788
+],
+"img/team/joachim-ruff.jpg": [
+8,
+28732
+],
+"img/team/ken-liu.jpg": [
+8,
+29888
+],
+"img/team/marc-su.jpg": [
+9,
+21841
+],
+"img/team/martin-jeschke.jpg": [
+8,
+25757
+],
+"img/team/michael-dammann.jpg": [
+9,
+19155
+],
+"img/team/oliver-amann.jpg": [
+8,
+22858
+],
+"img/team/signature-ruff.png": [
+8,
+140930
+],
+"img/team/thomas-kuhn.jpg": [
+8,
+26569
+],
+"img/team/thomas-kunz.jpg": [
+8,
+70976
+],
+"img/team/tkay-jeong.jpg": [
+8,
+29121
+],
+"img/team/tracy-liang.jpg": [
+8,
+24042
+],
+"img/team/vincent-tung.jpg": [
+8,
+27844
+],
+"img/video/poster-1.jpg": [
+8,
+120467
+],
+"img/video/poster-2.jpg": [
+8,
+142563
+],
+"img/video/poster-3.jpg": [
+8,
+156087
+],
+"img/video/poster-4.jpg": [
+8,
+195773
+],
+"img/video/poster-5.jpg": [
+8,
+87112
+],
+"img/wechat-qr.png": [
+2,
+1037
+]
+}

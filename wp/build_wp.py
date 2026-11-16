@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 OUT = ROOT / "wp" / "dist"
 THEME = OUT / "schmoll-modern"
-VERSION = "1.0.3"
+VERSION = "1.1.0"
 
 PACK_LIMIT = 8_200_000  # the browser upload tool takes at most 10 MB per file
 PACK = {}  # "img/..." or "brochures/..." -> pack number, filled by plan_packs()
@@ -55,18 +55,34 @@ def plan_packs():
         files.append(("brochures/" + name, ROOT / "wp" / "brochures" / f"{key}.pdf"))
     for slug, (_, source, name) in LEGAL_DOCS.items():
         files.append(("brochures/" + name, Path.home() / "Downloads" / source))
-    bins = []
-    for rel, f in sorted(files, key=lambda x: -x[1].stat().st_size):
+    # Files already on the server keep their package, so a rebuild only produces new
+    # packages for new or changed files (wp/packs.json records what was deployed).
+    lock_file = ROOT / "wp" / "packs.json"
+    lock = json.loads(lock_file.read_text()) if lock_file.exists() else {}
+    bins = {}
+    fresh = []
+    for rel, f in files:
         size = f.stat().st_size
-        for b in bins:
+        if rel in lock and lock[rel][1] == size:
+            bins.setdefault(lock[rel][0], {"size": 0, "files": [], "new": False})["files"].append((rel, f))
+        else:
+            fresh.append((rel, f, size))
+    nxt = max([v[0] for v in lock.values()] + [0]) + 1
+    new_bins = []
+    for rel, f, size in sorted(fresh, key=lambda x: -x[2]):
+        for b in new_bins:
             if b["size"] + size <= PACK_LIMIT:
                 b["files"].append((rel, f)); b["size"] += size; break
         else:
-            bins.append({"size": size, "files": [(rel, f)]})
-    for n, b in enumerate(bins, 1):
-        for rel, _ in b["files"]:
+            new_bins.append({"size": size, "files": [(rel, f)], "new": True})
+    for k, b in enumerate(new_bins):
+        bins[nxt + k] = b
+    for n, b in bins.items():
+        for rel, f in b["files"]:
             PACK[rel] = n
-    return bins
+            lock[rel] = [n, f.stat().st_size]
+    lock_file.write_text(json.dumps(lock, indent=0, sort_keys=True))
+    return [(n, bins[n]) for n in sorted(bins)]
 
 
 ASSET_BASE = "/wp-content/themes/schmoll-modern/assets/"
@@ -91,6 +107,13 @@ POSTS = {  # news file -> (old WordPress slug, date, category)
     "news-wus-expansion": ("wus-printed-circuits-expansion-powered-by-schmoll-asia-pacifics-cutting-edge-technology", "2024-08-07", "blog"),
     "news-larry-gao": ("celebrating-a-strong-partnership-larry-gao-2", "2024-07-01", "blog"),
     "news-new-website": ("schmoll-asia-pacific-new-website", "2024-06-28", "news"),
+    # exhibition reports: off the listings since September 2026, but their pages are kept so old links work
+    "news-hkpca-2025": ("hkpca-2025-schmoll-asia-best-pcb-equipment-solutions-in-asia-30-years-anniversary", "2025-12-09", "news"),
+    "news-cpca-show-2025": ("successful-participation-at-cpca-show-2025-in-shanghai", "2025-04-22", "news"),
+    "news-hkpca-2024": ("schmoll-asia-pacific-concludes-a-successful-year-at-the-hkpca-show-2024", "2024-12-18", "news"),
+    "news-cpca-2024": ("cpca-show-2024-a-resounding-success-for-schmoll-asia-pacific", "2024-11-26", "news"),
+    "news-tpca-2024": ("schmoll-asia-pacifics-success-at-tpca-show-2024", "2024-11-07", "news"),
+    "news-kpca-2024": ("celebrating-a-successful-kpca-show-2024-innovation-collaboration-and-growth", "2024-09-25", "news"),
 }
 BROCHURES = {  # product key -> source PDF in ~/Downloads (newest English front+back version)
     "eagle": "EN - BACKFRONT - Eagle .pdf", "hawk": "EN - BACKFRONT - HAWK.pdf", "falcon": "EN - BACKFRONT - FALCON.pdf",
@@ -121,17 +144,11 @@ REDIRECTS = {
     "automation": "/application/#automation", "fixture-probe-card": "/application/#fixture", "xray-xra3": "/application/#xray",
     "laser-2": "/application/#laser", "electric-vehicle": "/application/#ev",
     "about": "/pcb-drilling/", "contact": "/contact-us/", "applications": "/application/", "media": "/news/",
-    "eagle": "/eagle-series/", "hawk": "/hawk-series/", "falcon": "/falcon-series/", "rmxy": "/rmxy-series/",
+    "eagle": "/eagle-series/", "hawk": "/hawk-series/", "falcon": "/falcon-series/", "rmxy": "/rmxy-series/", "company": "/pcb-drilling/", "job": "/careers/", "laser": "/application/#laser", "backdrilling": "/application/#backdrilling", "direct-imaging": "/mdi-series/", "xray-xra3-cn": "/application/#xray",
     "raptor-series": "/raptor-series-best-routing-pcb-equipment/", "raptor": "/raptor-series-best-routing-pcb-equipment/",
     "combidrill-series": "/combi-drill-series/", "mdi": "/mdi-series/", "xra3": "/xra3-series/", "probe-card-series": "/probe-card/",
     "cookie-policy": "/privacy-policy/",
-    # exhibition reports from before 2026 were retired from the site in September 2026
-    "cpca-show-2024-a-resounding-success-for-schmoll-asia-pacific": "/news/",
-    "hkpca-2025-schmoll-asia-best-pcb-equipment-solutions-in-asia-30-years-anniversary": "/news/",
-    "schmoll-asia-pacific-concludes-a-successful-year-at-the-hkpca-show-2024": "/news/",
-    "schmoll-asia-pacifics-success-at-tpca-show-2024": "/news/",
-    "successful-participation-at-cpca-show-2025-in-shanghai": "/news/",
-    "celebrating-a-successful-kpca-show-2024-innovation-collaboration-and-growth": "/news/",
+    # 2026 show invitations existed only as short LinkedIn cross-posts
     "meet-schmoll-asia-pacific-at-kpca-show-2026": "/news/", "theca-2026-bangkok-here-we-come": "/news/",
     "celebrating-a-strong-partnership-larry-gao": "/celebrating-a-strong-partnership-larry-gao-2/",
 }
@@ -276,13 +293,13 @@ Requires PHP: 7.4
 
     # ---- asset packages: pictures and documents only, no code
     names = ["schmoll-modern"]
-    for n, b in enumerate(bins, 1):
+    for n, b in bins:
         d = OUT / f"schmoll-assets-{n}"
         d.mkdir()
         (d / f"schmoll-assets-{n}.php").write_text(f"""<?php
 /**
  * Plugin Name: Schmoll Assets {n}
- * Description: Static pictures and PDFs for the Schmoll Modern theme (package {n} of {len(bins)}). Contains no code.
+ * Description: Static pictures and PDFs for the Schmoll Modern theme (package {n}). Contains no code.
  * Version: {VERSION}
  */
 if (!defined('ABSPATH')) exit;
@@ -292,6 +309,8 @@ if (!defined('ABSPATH')) exit;
             (d / rel).parent.mkdir(parents=True, exist_ok=True)
             shutil.copy(f, d / rel)
         names.append(d.name)
+        if b["new"]:
+            print("NEW PACKAGE to upload:", d.name)
 
     for name in names:
         z = OUT / f"{name}.zip"

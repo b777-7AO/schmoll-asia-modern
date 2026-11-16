@@ -150,7 +150,7 @@ const BROCHURE = {
 };
 const dl = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v9M4.5 6.5L8 10l3.5-3.5M2 14h12" stroke="currentColor" stroke-width="1.6"/></svg>';
 
-const productsPage = banner('Products', 'You Name It, We Have It', '<span>Products</span>', 'assets/img/facility-3.jpg') + `
+const productsPage = banner('Products', 'You Name It, We Have It', '<span>Products</span>', 'assets/img/slides/slide-6.jpg') + `
 <section class="section">
   <div class="container">
     <div class="sec-head" data-reveal><span class="eyebrow">Cutting-Edge Technology</span><h2>The Schmoll Machine Lineup</h2><p class="lead">Our machines leverage artificial intelligence to enhance operational efficiency — dynamically adjusting settings and measurements with machine learning for optimal performance in every operation.</p></div>
@@ -165,7 +165,7 @@ const productsPage = banner('Products', 'You Name It, We Have It', '<span>Produc
 </section>
 <section class="section section--alt">
   <div class="container">
-    <div class="sec-head" data-reveal><span class="eyebrow">Downloads</span><h2>Machine Brochures</h2><p class="lead">Full specifications, feature breakdowns and application notes — every Schmoll machine, made in Germany.</p></div>
+    <div class="sec-head" data-reveal id="brochures"><span class="eyebrow">Downloads</span><h2>Machine Brochures</h2><p class="lead">Full specifications, feature breakdowns and application notes — every Schmoll machine, made in Germany.</p></div>
     <div class="pgrid" data-reveal style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">
       ${MACHINES.filter(m=>BROCHURE[m.key]).map(m=>`<a class="pcard" href="${BROCHURE[m.key]}" target="_blank" rel="noopener">
         <div class="pcard__img" style="aspect-ratio:3/4"><img src="assets/img/machines/${m.key}.jpg" alt="${m.name} brochure" loading="lazy" style="object-position:center top"></div>
@@ -180,7 +180,7 @@ function productDetail(m, idx) {
   const prev = MACHINES[(idx - 1 + MACHINES.length) % MACHINES.length];
   const next = MACHINES[(idx + 1) % MACHINES.length];
   const broc = BROCHURE[m.key];
-  return banner(m.cat, m.name, `<a href="products.html">Products</a><span>/</span><span>${m.name}</span>`) + `
+  return banner(m.cat, m.name, `<a href="products.html">Products</a><span>/</span><span>${m.name}</span>`, 'assets/img/slides/slide-7.jpg') + `
 <section class="section">
   <div class="container">
     <div class="pd-hero">
@@ -250,7 +250,7 @@ const appIcons = {
   ev:'<path d="M14 3L6 18h6l-2 11 12-16h-7l3-10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'
 };
 const APP_POSTER = { ccd:1, backdrilling:1, substrate:1, automation:1, fixture:1, xray:1, laser:1, ev:1 };
-const applicationsPage = banner('Application', 'Discover our Applications', '<span>Application</span>') + `
+const applicationsPage = banner('Application', 'Discover our Applications', '<span>Application</span>', 'assets/img/slides/slide-9.jpg') + `
 <section class="section">
   <div class="container">
     <div class="sec-head" data-reveal><span class="eyebrow">Applications</span><h2>Engineered for every PCB challenge</h2><p class="lead">From CCD precision drilling to backdrilling, substrate, automation, X-ray, laser and EV — explore the detailed application solutions behind every Schmoll machine.</p></div>
@@ -274,23 +274,6 @@ const applicationsPage = banner('Application', 'Discover our Applications', '<sp
    team.html is hand-maintained in site/ (CEO photo layout + globe.gl embed) — not generated here. */
 
 /* ======================================================= SERVICE */
-const servicePage = banner('Service', 'Got a Problem? Schmoll is Here.', '<span>Service</span>') + `
-<section class="section">
-  <div class="container">
-    <div class="grid" style="grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center;margin-bottom:clamp(40px,6vw,72px)">
-      <div data-reveal><span class="eyebrow" data-i18n="svc.eyebrow">Service</span><h2 style="margin:16px 0 18px" data-i18n="svc.title">Got a Problem? Schmoll is Here.</h2><p class="lead" data-i18n="svc.body">With expertise spanning various domains, we ensure that every challenge is met with a tailored solution.</p></div>
-      <div data-reveal data-delay="1"><img src="assets/img/facility-3.jpg" alt="Schmoll service engineers" style="width:100%;border:1px solid var(--line);border-radius:var(--radius)" loading="lazy"></div>
-    </div>
-    <div class="svc-list" data-reveal>
-      <div class="svc-item"><span class="svc-item__no">01</span><h3 data-i18n="svc.maint">Maintenance</h3><p>Reliable &amp; efficient preventive and corrective maintenance to keep your machines at peak performance.</p></div>
-      <div class="svc-item"><span class="svc-item__no">02</span><h3 data-i18n="svc.spare">Spare Parts</h3><p>Comprehensive &amp; prompt supply of genuine Schmoll spare parts, minimising downtime.</p></div>
-      <div class="svc-item"><span class="svc-item__no">03</span><h3 data-i18n="svc.repair">Repair</h3><p>Expert &amp; responsive repair services delivered by experienced engineers.</p></div>
-      <div class="svc-item"><span class="svc-item__no">04</span><h3 data-i18n="svc.rnd">R&amp;D Center</h3><p>Innovative &amp; cutting-edge research and development to advance your process.</p></div>
-    </div>
-  </div>
-</section>` + CONTACT_CTA;
-
-
 /* Open positions (content/careers/<lang>.json, same data as the live WP widget).
    One block per language, switched by applyLang via data-article-lang (EN fallback). */
 function careersJobs() {
@@ -367,22 +350,143 @@ const offices = [
 const pin = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5c-2.5 0-4.5 2-4.5 4.5C3.5 9.5 8 14.5 8 14.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5z" stroke="currentColor"/><circle cx="8" cy="6" r="1.6" stroke="currentColor"/></svg>';
 const phoneIco = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 2.5h3l1 3-2 1.2a8 8 0 003.8 3.8l1.2-2 3 1V13a1.5 1.5 0 01-1.6 1.5A11.5 11.5 0 012.5 4.1 1.5 1.5 0 014 2.5z" stroke="currentColor"/></svg>';
 const mailIco = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" stroke="currentColor"/><path d="M2.5 4l5.5 4.5L13.5 4" stroke="currentColor"/></svg>';
-const contactPage = banner('Contact', 'Contact Us', '<span>Contact</span>') + `
-<section class="section">
-  <div class="container">
-    <div class="sec-head" data-reveal><span class="eyebrow">Global Presence</span><h2>8 Offices · 7 Countries</h2><p class="lead">Find your nearest Schmoll Asia Pacific office.</p></div>
-    <div class="office-grid" data-reveal>
-      ${offices.map(([region,co,phone,addr,soon,id])=>`
-      <div class="office${soon?' office--soon':''}"${id?` id="${id}"`:''}>
-        <div class="office__region">${pin} ${region} ${soon?'<span class="badge-soon">Published soon</span>':''}</div>
+const mapUrl = (co, addr) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(co + ", " + addr);
+const officeCard = ([region, co, phone, addr, soon, id]) => `
+      <div class="office${soon ? ' office--soon' : ''}"${id ? ` id="${id}"` : ''} translate="no">
+        <div class="office__region">${pin} ${region} ${soon ? '<span class="badge-soon" data-i18n="o.soon" translate="yes">Published soon</span>' : ''}</div>
         <h3>${co}</h3>
-        ${phone?`<div class="office__row">${phoneIco}<a href="tel:${phone.replace(/[^+\d]/g,'')}">${phone}</a></div>`:''}
+        ${phone ? `<div class="office__row">${phoneIco}<a href="tel:${phone.replace(/[^+\d]/g, '')}">${phone}</a></div>` : ''}
         <div class="office__row">${pin}<span>${addr}</span></div>
         <div class="office__row">${mailIco}<a href="mailto:sales@schmoll-asia.com">sales@schmoll-asia.com</a></div>
-      </div>`).join("")}
+        ${id && !soon ? `<a class="office__map" href="${mapUrl(co, addr)}" target="_blank" rel="noopener" data-i18n="o.maps">Open in Maps</a>` : ''}
+      </div>`;
+const officeGroups = [
+  ["East Asia", "g.east", ["office-china", "office-kunshan", "office-hongkong", "office-taiwan", "office-korea"]],
+  ["Southeast Asia", "g.sea", ["office-malaysia", "office-thailand", "office-vietnam"]],
+  ["Group headquarters", "g.hq", [""]],
+];
+const contactPage = banner('Contact', 'Contact Us', '<span>Contact</span>', 'assets/img/gallery-4.jpg') + `
+<section class="section">
+  <div class="container">
+    <div class="req req--contact">
+      <div data-reveal>
+        <span class="eyebrow" data-i18n="ct.eyebrow">Contact</span>
+        <h2 style="margin:16px 0 16px" data-i18n="ct.title">Let's get in touch</h2>
+        <p class="lead" data-i18n="ct.sub">Provide us with your details and our team will contact you!</p>
+        <div class="lines">
+          <a class="line" href="mailto:sales@schmoll-asia.com"><span class="line__k" data-i18n="ct.l1">Sales and service</span><span class="line__v" translate="no">sales@schmoll-asia.com</span></a>
+          <a class="line" href="mailto:career@schmoll-asia.com"><span class="line__k" data-i18n="nav.careers">Careers</span><span class="line__v" translate="no">career@schmoll-asia.com</span></a>
+          <a class="line" href="https://www.linkedin.com/company/schmoll-asia-pacific" target="_blank" rel="noopener"><span class="line__k">LinkedIn</span><span class="line__v" translate="no">Schmoll Asia Pacific</span></a>
+          <div class="line line--qr"><span class="line__k" data-i18n="foot.wechat">Our WeChat</span><img src="assets/img/wechat-qr.png" alt="Schmoll Asia Pacific WeChat QR code" width="96" height="96" loading="lazy"></div>
+        </div>
+      </div>
+      <form class="form form--wide form--card" data-demo data-reveal data-delay="1">
+        <fieldset class="chips"><legend data-i18n="f.about">What is it about?</legend>
+          ${[["Sales", "t.sales"], ["Service", "t.service"], ["Careers", "t.careers"], ["Other", "t.other"]].map(([x, k], i) => `<label><input type="radio" name="topic" value="${x}"${i ? "" : " checked"}><span data-i18n="${k}">${x}</span></label>`).join("")}
+        </fieldset>
+        <div class="form__cols">
+          <div class="form__row"><label data-i18n="ct.name">Name</label><input name="name" type="text" required></div>
+          <div class="form__row"><label data-i18n="ct.email">Email</label><input name="email" type="email" required></div>
+        </div>
+        <div class="form__row"><label data-i18n="ct.company">Company Name</label><input name="company" type="text"></div>
+        <div class="form__row"><label data-i18n="f.msg">Your message</label><textarea name="message" rows="5"></textarea></div>
+        <button class="btn btn--lg" type="submit" data-sent="Sent" data-i18n="btn.connect">Connect</button>
+        <p class="form__note" data-i18n="ct.note">*Your email is safe with us, we don't spam.</p>
+      </form>
     </div>
   </div>
-</section>` + CONTACT_CTA;
+</section>
+<section class="section section--alt" id="offices">
+  <div class="container">
+    <div class="sec-head" data-reveal><span class="eyebrow" data-i18n="ct.gp">Global Presence</span><h2 data-i18n="ct.h">8 Offices · 7 Countries</h2><p class="lead" data-i18n="ct.find">Find your nearest Schmoll Asia Pacific office.</p></div>
+    ${officeGroups.map(([label, key, ids]) => `
+    <h3 class="office-group" data-reveal data-i18n="${key}">${label}</h3>
+    <div class="office-grid" data-reveal>${offices.filter((o) => ids.includes(o[5])).sort((a, b) => ids.indexOf(a[5]) - ids.indexOf(b[5])).map(officeCard).join("")}</div>`).join("")}
+  </div>
+</section>`;
+
+const SERIES = ["Eagle", "Hawk", "Falcon", "RMXY", "Raptor", "CombiDrill 500", "MDI", "XRA3", "Automation", "Probe Card / Fixture", "Other / not sure"];
+const svcIco = {
+  maint: '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.6"/><path d="M16 3v5M16 24v5M3 16h5M24 16h5M6.800 6.800l3.500 3.500M21.700 21.700l3.500 3.500M25.200 6.800l-3.500 3.500M10.300 21.700l-3.500 3.500" stroke="currentColor" stroke-width="1.6"/></svg>',
+  spare: '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 3l11 6v14l-11 6-11-6V9l11-6z" stroke="currentColor" stroke-width="1.6"/><path d="M5 9l11 6 11-6M16 15v14" stroke="currentColor" stroke-width="1.6"/></svg>',
+  repair: '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M20 5a7 7 0 00-6.600 9.300L4 23.700 8.300 28l9.400-9.400A7 7 0 0027 12l-4.500 4.500-4-4L23 8a7 7 0 00-3-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>',
+  rnd: '<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M12 4h8M13 4v8L5 26a2 2 0 001.800 3h18.400A2 2 0 0027 26l-8-14V4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21h14" stroke="currentColor" stroke-width="1.6"/></svg>',
+};
+const svcCards = [
+  ["maint", "01", "Maintenance", "svc.maint", "Reliable &amp; efficient preventive and corrective maintenance to keep your machines at peak performance.", "assets/img/slides/slide-1.jpg", "Engineer working on a Schmoll drilling machine"],
+  ["spare", "02", "Spare Parts", "svc.spare", "Comprehensive &amp; prompt supply of genuine Schmoll spare parts, minimising downtime.", "assets/img/slides/slide-3.jpg", "Spindles of a Schmoll machine"],
+  ["repair", "03", "Repair", "svc.repair", "Expert &amp; responsive repair services delivered by experienced engineers.", "assets/img/facility-1.jpg", "Engineer repairing a component at the bench"],
+  ["rnd", "04", "R&amp;D Center", "svc.rnd", "Innovative &amp; cutting-edge research and development to advance your process.", "assets/img/slides/slide-2.jpg", "Engineer at a machine control screen"],
+];
+const servicePage = banner('Service', 'Got a Problem? Schmoll is Here.', '<span>Service</span>', 'assets/img/slides/slide-1.jpg') + `
+<section class="section">
+  <div class="container">
+    <div class="split" data-reveal>
+      <div><span class="eyebrow" data-i18n="svc.eyebrow">Service</span><h2 style="margin:16px 0 18px" data-i18n="svc.title">Got a Problem? Schmoll is Here.</h2><p class="lead" data-i18n="svc.body">With expertise spanning various domains, we ensure that every challenge is met with a tailored solution.</p>
+        <p style="margin-top:28px"><a class="btn btn--lg" href="#service-request" data-i18n="svc.req">Request service</a></p></div>
+      <figure class="split__media"><img src="assets/img/facility-3.jpg" alt="Schmoll service engineers at a machine" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="sec-head" data-reveal><span class="eyebrow" data-i18n="svc.what">What we do</span><h2 data-i18n="svc.h4">Four services for your Schmoll machines</h2></div>
+    <div class="svc-cards">
+      ${svcCards.map(([ico, no, title, key, text, img, alt], i) => `
+      <article class="svc-card" data-reveal data-delay="${i % 2}">
+        <div class="svc-card__media"><img src="${img}" alt="${alt}" loading="lazy"></div>
+        <div class="svc-card__body">
+          <span class="svc-card__ico">${svcIco[ico]}</span>
+          <span class="svc-card__no">${no}</span>
+          <h3 data-i18n="${key}">${title}</h3>
+          <p data-i18n="${key}.p">${text}</p>
+          <a class="svc-card__link" href="#service-request" data-topic="${title.replace('&amp;', '&')}">Ask about ${title.toLowerCase().replace('r&amp;d center', 'R&amp;D')}</a>
+        </div>
+      </article>`).join("")}
+    </div>
+  </div>
+</section>
+<section class="section svc-near">
+  <div class="container">
+    <div class="svc-near__grid">
+      <div data-reveal><span class="eyebrow" data-i18n="svc.near.e">Close to your line</span><h2 style="margin:16px 0 14px" data-i18n="svc.near.h">8 offices in 7 countries</h2><p class="lead" data-i18n="ct.find">Find your nearest Schmoll Asia Pacific office.</p></div>
+      <ul class="svc-near__list" data-reveal data-delay="1" translate="no">
+        ${offices.filter((o) => o[5]).map(([region, , , , , id]) => `<li><a href="contact.html#${id}">${region.replace("China — ", "").replace(" — ", ", ")}</a></li>`).join("")}
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section section--alt" id="service-request">
+  <div class="container">
+    <div class="req">
+      <div data-reveal>
+        <span class="eyebrow" data-i18n="req.e">Service request</span>
+        <h2 style="margin:16px 0 16px" data-i18n="req.h">Tell us what your machine needs</h2>
+        <p class="lead" data-i18n="req.p">Describe the machine and the problem. Our team will contact you.</p>
+        <ul class="req__list">
+          <li><a href="mailto:sales@schmoll-asia.com" translate="no">sales@schmoll-asia.com</a></li>
+          <li><a href="products.html#brochures" data-i18n="req.bro">Machine brochures</a></li>
+          <li><a href="/gtc-services/" data-i18n="req.gtc">General Terms and Conditions of Service</a></li>
+        </ul>
+      </div>
+      <form class="form form--wide" data-demo data-reveal data-delay="1">
+        <div class="form__cols">
+          <div class="form__row"><label data-i18n="ct.name">Name</label><input name="name" type="text" required></div>
+          <div class="form__row"><label data-i18n="ct.email">Email</label><input name="email" type="email" required></div>
+        </div>
+        <div class="form__cols">
+          <div class="form__row"><label data-i18n="ct.company">Company Name</label><input name="company" type="text"></div>
+          <div class="form__row"><label data-i18n="f.series">Machine series</label><select name="series" translate="no">${SERIES.map((x) => `<option>${x}</option>`).join("")}</select></div>
+        </div>
+        <div class="form__row"><label data-i18n="f.service">Service</label><select name="topic">${["Maintenance", "Spare Parts", "Repair", "R&amp;D Center"].map((x) => `<option>${x}</option>`).join("")}</select></div>
+        <div class="form__row"><label data-i18n="f.help">What can we help with?</label><textarea name="message" rows="4" required></textarea></div>
+        <button class="btn btn--lg" type="submit" data-sent="Sent" data-i18n="f.send">Send request</button>
+        <p class="form__note" data-i18n="ct.note">*Your email is safe with us, we don't spam.</p>
+      </form>
+    </div>
+  </div>
+</section>`;
+
 
 /* ======================================================= NEWS / MEDIA */
 /* Articles migrated from the live site (content/news/posts.json, built by
@@ -717,7 +821,9 @@ MACHINES.forEach((m, i) => {
 });
 
 // news/blog article pages (chronological prev/next across both categories)
-const withPages = sorted.filter((p) => postHref(p));
+const retired = [...POSTS].filter((p) => p.type === "event" && p.date < "2026-01-01" && p.blocks.length)
+  .sort((a, b) => b.date.localeCompare(a.date));
+const withPages = sorted.filter((p) => postHref(p)).concat(retired.filter((p) => postHref(p)));
 withPages.forEach((p, i) => {
   PAGES.push({
     file: postHref(p),
