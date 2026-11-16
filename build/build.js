@@ -360,11 +360,6 @@ const officeCard = ([region, co, phone, addr, soon, id]) => `
         <div class="office__row">${mailIco}<a href="mailto:sales@schmoll-asia.com">sales@schmoll-asia.com</a></div>
         ${id && !soon ? `<a class="office__map" href="${mapUrl(co, addr)}" target="_blank" rel="noopener" data-i18n="o.maps">Open in Maps</a>` : ''}
       </div>`;
-const officeGroups = [
-  ["East Asia", "g.east", ["office-china", "office-kunshan", "office-hongkong", "office-taiwan", "office-korea"]],
-  ["Southeast Asia", "g.sea", ["office-malaysia", "office-thailand", "office-vietnam"]],
-  ["Group headquarters", "g.hq", [""]],
-];
 const contactPage = banner('Contact', 'Contact Us', '<span>Contact</span>', 'assets/img/gallery-4.jpg') + `
 <section class="section">
   <div class="container">
@@ -399,9 +394,7 @@ const contactPage = banner('Contact', 'Contact Us', '<span>Contact</span>', 'ass
 <section class="section section--alt" id="offices">
   <div class="container">
     <div class="sec-head" data-reveal><span class="eyebrow" data-i18n="ct.gp">Global Presence</span><h2 data-i18n="ct.h">8 Offices · 7 Countries</h2><p class="lead" data-i18n="ct.find">Find your nearest Schmoll Asia Pacific office.</p></div>
-    ${officeGroups.map(([label, key, ids]) => `
-    <h3 class="office-group" data-reveal data-i18n="${key}">${label}</h3>
-    <div class="office-grid" data-reveal>${offices.filter((o) => ids.includes(o[5])).sort((a, b) => ids.indexOf(a[5]) - ids.indexOf(b[5])).map(officeCard).join("")}</div>`).join("")}
+    <div class="office-grid" data-reveal>${offices.map(officeCard).join("")}</div>
   </div>
 </section>`;
 
