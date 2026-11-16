@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 OUT = ROOT / "wp" / "dist"
 THEME = OUT / "schmoll-modern"
-VERSION = "1.1.2"
+VERSION = "1.1.3"
 
 PACK_LIMIT = 8_200_000  # the browser upload tool takes at most 10 MB per file
 PACK = {}  # "img/..." or "brochures/..." -> pack number, filled by plan_packs()
@@ -228,22 +228,22 @@ def build():
     shell = split("about")  # the generated header and footer are the reference
     for file, slug in PAGES.items():
         p = split(file)
-        items.append({"type": "page", "slug": slug or "home", "front": not slug, "title": p["title"].split(" — ")[0] if slug else "Home",
+        items.append({"type": "page", "slug": slug or "home", "front": not slug, "title": p["title"].split(" | ")[0] if slug else "Home",
                       "seo_title": p["title"], "desc": p["desc"], "content": rewrite(p["main"]),
                       "head": rewrite(p["head"]), "scripts": rewrite(p["scripts"]), "key": file})
     for file, (slug, date, cat) in POSTS.items():
         p = split(file)
-        items.append({"type": "post", "slug": slug, "title": p["title"].rsplit(" — ", 1)[0], "seo_title": p["title"], "desc": p["desc"],
+        items.append({"type": "post", "slug": slug, "title": p["title"].rsplit(" | ", 1)[0], "seo_title": p["title"], "desc": p["desc"],
                       "date": date + "T09:00:00", "category": cat, "content": rewrite(p["main"]), "head": rewrite(p["head"]),
                       "scripts": rewrite(p["scripts"]), "key": file})
     for slug, (title, _, _) in LEGAL_DOCS.items():
-        items.append({"type": "page", "slug": slug, "title": title, "seo_title": f"{title} — Schmoll Asia Pacific",
+        items.append({"type": "page", "slug": slug, "title": title, "seo_title": f"{title} | Schmoll Asia Pacific",
                       "desc": f"{title} of Schmoll Asia Pacific.", "content": legal_page(slug), "head": "", "scripts": "", "key": slug})
     legal_src = ROOT / "wp" / "legal"
     for slug, title in (("privacy-policy", "Privacy Policy"), ("term-of-use", "Terms of Use")):
         src = legal_src / f"{slug}.html"
         body = (BANNER.format(img=img("facility-2.jpg"), title=title) + '\n<section class="section"><div class="container sap-doc">\n' + src.read_text(encoding="utf-8") + "\n</div></section>") if src.exists() else pending_legal(title)
-        items.append({"type": "page", "slug": slug, "title": title, "seo_title": f"{title} — Schmoll Asia Pacific",
+        items.append({"type": "page", "slug": slug, "title": title, "seo_title": f"{title} | Schmoll Asia Pacific",
                       "desc": f"{title} of Schmoll Asia Pacific.", "content": body, "head": "", "scripts": "", "key": slug,
                       "noindex": not src.exists()})
 

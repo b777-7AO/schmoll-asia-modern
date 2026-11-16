@@ -3,7 +3,7 @@
 const HEADER = `<header class="site-header">
   <div class="container">
     <nav class="nav" aria-label="Primary">
-      <a class="logo" href="index.html" aria-label="Schmoll Asia Pacific — home"><img class="logo-img" src="assets/img/logo-sap.png?v=10" alt="Schmoll Asia Pacific"></a>
+      <a class="logo" href="index.html" aria-label="Schmoll Asia Pacific home"><img class="logo-img" src="assets/img/logo-sap.png?v=10" alt="Schmoll Asia Pacific"></a>
 
       <ul class="menu">
         <li><a href="about.html" data-i18n="nav.about">About</a></li>

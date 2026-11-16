@@ -25,7 +25,7 @@ const about = banner('About', 'German Quality &amp;<br>Innovation', '<span>About
         <span class="eyebrow">Our Mission</span>
         <h2 style="margin:16px 0 22px">Precision engineering, in Asia since 1996</h2>
         <p>Schmoll has offered German quality and innovation across Asia since 1996, operating as a leading PCB drilling and routing machinery provider. Our machines are built on precision-engineering fundamentals: high-speed linear motors, granite machine bases for superior stability, and sophisticated tool adjustment systems.</p>
-        <p>We help you meet your expectations with efficient solutions and machinery — your technology partner and a solution provider you can trust.</p>
+        <p>We help you meet your expectations with efficient solutions and machinery, your technology partner and a solution provider you can trust.</p>
       </div>
       <div data-reveal data-delay="1"><img src="assets/img/facility-2.jpg" alt="Schmoll precision machine" style="width:100%;border:1px solid var(--line);border-radius:var(--radius)" loading="lazy"></div>
     </div>
@@ -76,61 +76,61 @@ const about = banner('About', 'German Quality &amp;<br>Innovation', '<span>About
 const check = '<svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.5 4.5L16 3.5" stroke="currentColor" stroke-width="2.2"/></svg>';
 const MACHINES = [
   { key:"eagle", name:"Eagle Series", cat:"Drilling · Depth Control",
-    tagline:"Eagle XY CCD — special-application microdrilling &amp; backdrilling, made in Germany.",
+    tagline:"Eagle XY CCD: special-application microdrilling &amp; backdrilling, made in Germany.",
     blurb:"Special-application microdrilling with Contact Bit Detection depth control, AI-driven linear motors and a solid granite structure.",
     apps:["Panel Traceability","Sliver Control","Stub Length Control"],
     features:["S80 Next-Gen High-Speed Controller","High-Speed AI-Drives","Solid Granite Structure","Automated Collet Cleaning","Active Process Monitoring","Industry 4.0 Connectivity"],
-    specs:[["Models","ES-6-2228 / 2528 / 2532 / 2643"],["Basic accuracy","X/Y ± 18 µm, Cpk &gt; 1.67"],["Spindles","T160 / T200x / T250 — up to 250,000 rpm"],["X/Y drive","AI-driven linear motor — 90 m/min"],["Depth control","Contact Bit Detection (CBD)"],["Panel size","up to 25.9″ × 43.0″ (658 × 1092 mm)"]] },
+    specs:[["Models","ES-6-2228 / 2528 / 2532 / 2643"],["Basic accuracy","X/Y ± 18 µm, Cpk &gt; 1.67"],["Spindles","T160 / T200x / T250, up to 250,000 rpm"],["X/Y drive","AI-driven linear motor, 90 m/min"],["Depth control","Contact Bit Detection (CBD)"],["Panel size","up to 25.9″ × 43.0″ (658 × 1092 mm)"]] },
   { key:"hawk", name:"Hawk Series", cat:"Drilling · High-End",
-    tagline:"Hawk — high-end microdrilling &amp; depth control for the most demanding PCBs.",
+    tagline:"Hawk: high-end microdrilling &amp; depth control for the most demanding PCBs.",
     blurb:"High-end microdrilling and depth control with the S80 Next-Gen controller and full Industry 4.0 connectivity.",
     apps:["LEO Satellite PCB","Automotive PCB","Artificial Intelligence"],
     features:["S80 Next-Gen High-Speed Controller","Durable High-Performance Spindles","High-Speed AI-Drives","Optional Automation QLB · DTE · ALS","Industry 4.0 Connectivity","Automated Collet Cleaning"],
-    specs:[["Models","HS-6-2228 / 2528 / 2532 / 2643"],["Basic accuracy","X/Y ± 18 µm, Cpk &gt; 1.67"],["Spindles","T160 / T200x — up to 200,000 rpm"],["X/Y drive","AI-driven linear motor — 90 m/min"],["Z drive","AI-driven AC motor — 60 m/min"],["Tool cassette","JTC 6×50 / 8×50 tools"]] },
+    specs:[["Models","HS-6-2228 / 2528 / 2532 / 2643"],["Basic accuracy","X/Y ± 18 µm, Cpk &gt; 1.67"],["Spindles","T160 / T200x, up to 200,000 rpm"],["X/Y drive","AI-driven linear motor, 90 m/min"],["Z drive","AI-driven AC motor, 60 m/min"],["Tool cassette","JTC 6×50 / 8×50 tools"]] },
   { key:"falcon", name:"Falcon Series", cat:"Drilling · Substrate",
-    tagline:"Falcon — substrate drilling machine for micro-via and micro-drilling.",
+    tagline:"Falcon: substrate drilling machine for micro-via and micro-drilling.",
     blurb:"Substrate drilling precision engineered for IC substrate and HDI, with Smart Climate Control on a full-body granite base.",
     apps:["Substrate","Micro Via","Micro Drilling"],
     features:["S80 Next-Gen Controller","High-Speed AI-Drives","Smart Climate Control","Full-Body Granite Base","Industry 4.0"],
-    specs:[["Models","FS / FT / FXY-6-2227"],["Basic accuracy","up to ± 12 µm (15 µm @ Cpk 1.67)"],["Spindles","T200x / T250 / PS300 — up to 300,000 rpm"],["Axis speed","XY 100 m/min · Z 50–60 m/min"],["CCD registration","High-resolution cameras (FXY)"],["Drive","AI-driven linear motor"]] },
+    specs:[["Models","FS / FT / FXY-6-2227"],["Basic accuracy","up to ± 12 µm (15 µm @ Cpk 1.67)"],["Spindles","T200x / T250 / PS300, up to 300,000 rpm"],["Axis speed","XY 100 m/min · Z 50–60 m/min"],["CCD registration","High-resolution cameras (FXY)"],["Drive","AI-driven linear motor"]] },
   { key:"raptor", name:"Raptor Series", cat:"Routing",
-    tagline:"Raptor XY CCD Routing — high-quality routing PCB equipment made in Germany.",
+    tagline:"Raptor XY CCD Routing: high-quality routing PCB equipment made in Germany.",
     blurb:"Contour and depth routing with CCD registration, vacuum table and touch-probe second measurement.",
     apps:["Contour Routing","Depth Routing","Optical Module"],
     features:["Vacuum Table","2nd Measurement Touch Probe","Pin-Up Table","Optical Broken-Bit Detection (BBD)","ESD Protection","Industry 4.0 Connectivity"],
-    specs:[["Models","RXY-6-2228 / 2528 / 2532 / 2643"],["Depth routing","± 15 µm with CBD"],["Edge-to-edge accuracy","± 50 µm"],["Spindles","DR-130 (20–125k) · SM75 (5–75k)"],["CCD target","Ø 0.2 mm – 8 mm"],["Drive","AI-driven linear motor — 90 m/min"]] },
+    specs:[["Models","RXY-6-2228 / 2528 / 2532 / 2643"],["Depth routing","± 15 µm with CBD"],["Edge-to-edge accuracy","± 50 µm"],["Spindles","DR-130 (20–125k) · SM75 (5–75k)"],["CCD target","Ø 0.2 mm – 8 mm"],["Drive","AI-driven linear motor, 90 m/min"]] },
   { key:"combidrill", name:"CombiDrill 500", cat:"Laser Drilling",
-    tagline:"CombiDrill 500 — hybrid UV-CO₂ laser drilling for microvias.",
+    tagline:"CombiDrill 500: hybrid UV-CO₂ laser drilling for microvias.",
     blurb:"Dual-beam hybrid laser combining CO₂ via drilling with UV copper clearance and cleaning for advanced HDI.",
     apps:["UV Copper Clearance","CO₂ Via Drilling","UV Copper Cleaning"],
     features:["Dual Laser Beam","CO₂ 9400 nm + UV 355 nm","Integrated Loader","MES / Industry 4.0 Ready"],
     specs:[["Laser source","CO₂ 9400 nm / UV 355 nm"],["Via size","50 µm – 300 µm"],["Productivity","300 vias/sec*"],["Accuracy","± 10 µm"],["Laser beams","2"],["Dimensions","2090 × 1970 × 2126 mm"]] },
   { key:"mdi", name:"MDI Series", cat:"Direct Imaging",
-    tagline:"MDI-TTG SolderBeam — soldermask &amp; resist direct imaging.",
+    tagline:"MDI-TTG SolderBeam: soldermask &amp; resist direct imaging.",
     blurb:"Maskless direct imaging with multi-wavelength UV-LED photoheads, dynamic autofocus and tandem-table throughput.",
     apps:["White Ink","Black Ink","Green Ink"],
     features:["Multi Light-Source 365–420 nm","Resolution 30 µm L/S","High-Power UV-LED Beam","XXL Format up to 54″ × 36″","Dynamic Autofocus to 11 mm","Full Automatic Clamping"],
     specs:[["Machine type","MDI-TTG"],["Max system accuracy","registered ± 10 µm"],["CCD alignment","&lt; 2 µm"],["Working format","up to 54″ × 36″ (gantry mode)"],["Platform","Solid granite"],["Weight","ca. 4500 kg"]] },
   { key:"xra3", name:"XRA3 Series", cat:"X-Ray",
-    tagline:"XRA3 — full-panel X-ray inspection, registration &amp; drilling.",
+    tagline:"XRA3: full-panel X-ray inspection, registration &amp; drilling.",
     blurb:"Dual-spindle X-ray system for drill-in-centre accuracy, layer optimization and panel serialization.",
     apps:["Drill in Centre","Serialization","Layer Optimization"],
     features:["Dual Spindle DD / DR","70 KV High-Performance X-Ray Tube","Multi-Zone CCD Registration","S80 Next-Gen Control","First-Article Checking","Automation Options"],
     specs:[["Models","XRA3 · XRA3-XXL"],["Panel size","30″ × 28″ · 50″ × 32″ (XXL)"],["Drill-in-centre accuracy","≤ 9 µm"],["X-Ray source","70 KV (optional 90 KV)"],["Layer count","up to 99 layers"],["CCD vision","min. pad Ø 0.20 mm"]] },
   { key:"automation", name:"Automation Series", cat:"Automation",
-    tagline:"Drill-room automation — ALS · QLB · DTE · ACC.",
+    tagline:"Drill-room automation: ALS · QLB · DTE · ACC.",
     blurb:"End-to-end PCB drill-room automation, from flexible line shuttles to AGV intralogistics and automatic collet cleaning.",
     apps:["AGV Intralogistics","Individual Automation","Inline Automation"],
-    features:["ALS — Flexible Line Shuttle","QLB — 4-Level Buffer","DTE — 2-Level Buffer","ACC — Automatic Collet Cleaning","MES / Industry 4.0"],
+    features:["ALS: Flexible Line Shuttle","QLB: 4-Level Buffer","DTE: 2-Level Buffer","ACC: Automatic Collet Cleaning","MES / Industry 4.0"],
     specs:[["ALS capacity","up to 18 levels / 102 stacks"],["QLB","4 levels / 18 stacks"],["DTE","2 levels / 6 stacks"],["Process time","1 min load / unload"],["Compatible","Eagle / Hawk series"],["Smart factory","MES, customizable"]] },
   { key:"probecard", name:"Probe Card / Fixture", cat:"Fixture / Probe Card",
-    tagline:"Fixture &amp; probe-card solutions — nano accuracy.",
+    tagline:"Fixture &amp; probe-card solutions: nano accuracy.",
     blurb:"Ultra-precision fixture drilling and probe-card solutions with nano-scale accuracy and CCD control.",
     apps:["Nano Accuracy","Precision Alignment","High Aspect Ratio"],
     features:["Hole Ø from 20 µm","Wall Thickness 10 µm","Hole Position ± 1.5 µm","CCD Control","Depth-Routing","Spray Cooling"],
     specs:[["Models","Fixture Nano · Fixture 1 · MX 1"],["Process accuracy","± 1.5 µm (Nano)"],["Min. hole / pitch","0.02 mm / 0.03 mm"],["Scale resolution","5 nm"],["Climate control","Yes (Nano)"],["Controller","S80"]] },
   { key:"rmxy", name:"RMXY Series", cat:"Routing",
-    tagline:"RMXY — Routing Machine XY precision profiling platform.",
+    tagline:"RMXY: Routing Machine XY precision profiling platform.",
     blurb:"The routing-machine-XY platform delivering CCD-registered contour and depth routing with linear-motor precision.",
     apps:["Contour Routing","Depth Routing"],
     features:["CCD Registration","AI-Driven Linear-Motor Drive","Industry 4.0 Connectivity","Depth Routing with CBD"],
@@ -153,7 +153,7 @@ const dl = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 
 const productsPage = banner('Products', 'You Name It, We Have It', '<span>Products</span>', 'assets/img/slides/slide-6.jpg') + `
 <section class="section">
   <div class="container">
-    <div class="sec-head" data-reveal><span class="eyebrow">Cutting-Edge Technology</span><h2>The Schmoll Machine Lineup</h2><p class="lead">Our machines leverage artificial intelligence to enhance operational efficiency — dynamically adjusting settings and measurements with machine learning for optimal performance in every operation.</p></div>
+    <div class="sec-head" data-reveal><span class="eyebrow">Cutting-Edge Technology</span><h2>The Schmoll Machine Lineup</h2><p class="lead">Our machines leverage artificial intelligence to enhance operational efficiency, dynamically adjusting settings and measurements with machine learning for optimal performance in every operation.</p></div>
     <div class="pgrid" data-reveal>
       ${MACHINES.map((m,i)=>`<a class="pcard" href="product-${m.key}.html">
         <div class="pcard__img pcard__img--render"><span class="pcard__cat">${m.cat}</span><img src="assets/img/machines/${m.key}.webp?v=8" alt="${m.name}" loading="lazy"></div>
@@ -165,7 +165,7 @@ const productsPage = banner('Products', 'You Name It, We Have It', '<span>Produc
 </section>
 <section class="section section--alt">
   <div class="container">
-    <div class="sec-head" data-reveal id="brochures"><span class="eyebrow">Downloads</span><h2>Machine Brochures</h2><p class="lead">Full specifications, feature breakdowns and application notes — every Schmoll machine, made in Germany.</p></div>
+    <div class="sec-head" data-reveal id="brochures"><span class="eyebrow">Downloads</span><h2>Machine Brochures</h2><p class="lead">Full specifications, feature breakdowns and application notes for every Schmoll machine, made in Germany.</p></div>
     <div class="pgrid" data-reveal style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">
       ${MACHINES.filter(m=>BROCHURE[m.key]).map(m=>`<a class="pcard" href="${BROCHURE[m.key]}" target="_blank" rel="noopener">
         <div class="pcard__img" style="aspect-ratio:3/4"><img src="assets/img/machines/${m.key}.jpg" alt="${m.name} brochure" loading="lazy" style="object-position:center top"></div>
@@ -231,7 +231,7 @@ function productDetail(m, idx) {
 /* ======================================================= APPLICATIONS */
 const apps = [
   ["ccd","CCD Application","High-precision PCB drilling with CCD camera technology for accurate target recognition and registration."],
-  ["backdrilling","Backdrilling","Precision via management and stub removal — controlled-depth backdrilling for high-speed signal integrity."],
+  ["backdrilling","Backdrilling","Precision via management and stub removal: controlled-depth backdrilling for high-speed signal integrity."],
   ["substrate","Substrate","Advanced processing for IC substrates and high-density interconnect applications."],
   ["automation","Automation","PCB machine automation across the drillroom for the highest productivity at the lowest cost of ownership."],
   ["fixture","Fixture / Probe Card","Test fixtures and probe-card solutions engineered for reliable electrical test."],
@@ -253,7 +253,7 @@ const APP_POSTER = { ccd:1, backdrilling:1, substrate:1, automation:1, fixture:1
 const applicationsPage = banner('Application', 'Discover our Applications', '<span>Application</span>', 'assets/img/slides/slide-9.jpg') + `
 <section class="section">
   <div class="container">
-    <div class="sec-head" data-reveal><span class="eyebrow">Applications</span><h2>Engineered for every PCB challenge</h2><p class="lead">From CCD precision drilling to backdrilling, substrate, automation, X-ray, laser and EV — explore the detailed application solutions behind every Schmoll machine.</p></div>
+    <div class="sec-head" data-reveal><span class="eyebrow">Applications</span><h2>Engineered for every PCB challenge</h2><p class="lead">From CCD precision drilling to backdrilling, substrate, automation, X-ray, laser and EV. Explore the detailed application solutions behind every Schmoll machine.</p></div>
     <div class="pgrid" style="grid-template-columns:repeat(auto-fill,minmax(310px,1fr))" data-reveal>
       ${apps.map((a,i)=>`
       <div class="pcard" id="${a[0]}" style="scroll-margin-top:90px">
@@ -271,7 +271,7 @@ const applicationsPage = banner('Application', 'Discover our Applications', '<sp
 </section>` + CONTACT_CTA;
 
 /* ======================================================= TEAM
-   team.html is hand-maintained in site/ (CEO photo layout + globe.gl embed) — not generated here. */
+   team.html is hand-maintained in site/ (CEO photo layout + globe.gl embed), not generated here. */
 
 /* ======================================================= SERVICE */
 /* Open positions (content/careers/<lang>.json, same data as the live WP widget).
@@ -337,15 +337,15 @@ const careersPage = banner('Careers', 'Start Your Career With Schmoll', '<span>C
 
 /* ======================================================= CONTACT */
 const offices = [
-  ["China — Dongguan","Dongguan Schmoll Electronic Equipment Co., Ltd","+86-(0)769-2241-9199","F1,F3 Block G, LianShang Intelligent Manufacturing Park, ChuangRing Road, DiChong Village, Gaobu Town, Dongguan City, Guangdong Province, China",false,"office-china"],
+  ["China, Dongguan","Dongguan Schmoll Electronic Equipment Co., Ltd","+86-(0)769-2241-9199","F1,F3 Block G, LianShang Intelligent Manufacturing Park, ChuangRing Road, DiChong Village, Gaobu Town, Dongguan City, Guangdong Province, China",false,"office-china"],
   ["Taiwan","Schmoll Asia Pacific Ltd. Taiwan Branch (H.K.)","+886-(0)3-358-3808","5F., No. 117, Long'an St., Taoyuan Dist., Taoyuan City, Taiwan 33033",false,"office-taiwan"],
-  ["China — Kunshan","Schmoll PCB Equipment (Kunshan) Co., Ltd.","+86-(0)512-5737 1850","5th Floor, Building No.4, No.1367 Juxiang Road, Zhangpu Town 215300 Kunshan, Jiangsu Province, P.R. China",false,"office-kunshan"],
-  ["Malaysia — Penang","Schmoll Asia Pacific (Malaysia) Sdn Bhd","+60 (0)4 5897396","1-27, Utropolis, Utama, Persiaran Cassia Barat 3, 14110 Bandar, Cassia, Pulau Pinang",false,"office-malaysia"],
-  ["Thailand — Bangkok","Schmoll Asia Pacific (Thailand) Ltd.","+66 (0) 2 10 72 923","Head Office no.1023, Room 158, 15th Floor, MS SIAM TOWER, Rama III Road, Khwaeng Chong Nonsi, Khet Yan Nawa, Bangkok 10120",false,"office-thailand"],
-  ["Korea — Ansan","Schmoll Asia Pacific Korea Co., Ltd.","+82-031-497-8779","#616, Ansan Smartsquare, 325, Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea",false,"office-korea"],
-  ["China — Hong Kong","Schmoll Asia Pacific Limited","+852-28-505-909","Suite 2002, 20/F, Two Chinachem Exchange Square, No. 388 King’s Road, Hong Kong",false,"office-hongkong"],
+  ["China, Kunshan","Schmoll PCB Equipment (Kunshan) Co., Ltd.","+86-(0)512-5737 1850","5th Floor, Building No.4, No.1367 Juxiang Road, Zhangpu Town 215300 Kunshan, Jiangsu Province, P.R. China",false,"office-kunshan"],
+  ["Malaysia, Penang","Schmoll Asia Pacific (Malaysia) Sdn Bhd","+60 (0)4 5897396","1-27, Utropolis, Utama, Persiaran Cassia Barat 3, 14110 Bandar, Cassia, Pulau Pinang",false,"office-malaysia"],
+  ["Thailand, Bangkok","Schmoll Asia Pacific (Thailand) Ltd.","+66 (0) 2 10 72 923","Head Office no.1023, Room 158, 15th Floor, MS SIAM TOWER, Rama III Road, Khwaeng Chong Nonsi, Khet Yan Nawa, Bangkok 10120",false,"office-thailand"],
+  ["Korea, Ansan","Schmoll Asia Pacific Korea Co., Ltd.","+82-031-497-8779","#616, Ansan Smartsquare, 325, Sandan-ro, Danwon-gu, Ansan-si, Gyeonggi-do, Republic of Korea",false,"office-korea"],
+  ["China, Hong Kong","Schmoll Asia Pacific Limited","+852-28-505-909","Suite 2002, 20/F, Two Chinachem Exchange Square, No. 388 King’s Road, Hong Kong",false,"office-hongkong"],
   ["Vietnam","Schmoll Asia Pacific Vietnam Company Limited","","Room 232, 2nd Floor, Hoang Ha Building, Le Thai To Street, Vo Cuong Ward, Bac Ninh Province, Vietnam",true,"office-vietnam"],
-  ["Germany — Headquarters","Schmoll Maschinen GmbH","","Parent company · Rödermark, Germany — schmoll-maschinen.de",false,""]
+  ["Germany, Headquarters","Schmoll Maschinen GmbH","","Parent company · Rödermark, Germany · schmoll-maschinen.de",false,""]
 ];
 const pin = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5c-2.5 0-4.5 2-4.5 4.5C3.5 9.5 8 14.5 8 14.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5z" stroke="currentColor"/><circle cx="8" cy="6" r="1.6" stroke="currentColor"/></svg>';
 const phoneIco = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 2.5h3l1 3-2 1.2a8 8 0 003.8 3.8l1.2-2 3 1V13a1.5 1.5 0 01-1.6 1.5A11.5 11.5 0 012.5 4.1 1.5 1.5 0 014 2.5z" stroke="currentColor"/></svg>';
@@ -444,7 +444,7 @@ const servicePage = banner('Service', 'Got a Problem? Schmoll is Here.', '<span>
     <div class="svc-near__grid">
       <div data-reveal><span class="eyebrow" data-i18n="svc.near.e">Close to your line</span><h2 style="margin:16px 0 14px" data-i18n="svc.near.h">8 offices in 7 countries</h2><p class="lead" data-i18n="ct.find">Find your nearest Schmoll Asia Pacific office.</p></div>
       <ul class="svc-near__list" data-reveal data-delay="1" translate="no">
-        ${offices.filter((o) => o[5]).map(([region, , , , , id]) => `<li><a href="contact.html#${id}">${region.replace("China — ", "").replace(" — ", ", ")}</a></li>`).join("")}
+        ${offices.filter((o) => o[5]).map(([region, , , , , id]) => `<li><a href="contact.html#${id}">${region.replace("China, ", "")}</a></li>`).join("")}
       </ul>
     </div>
   </div>
@@ -558,7 +558,7 @@ const liCard = (p) => `
     ${p.images[0] ? `<div class="li-card__media"><img src="${p.images[0]}" alt="" loading="lazy">${p.hasVideo ? '<span class="li-card__play"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="rgba(0,0,0,.55)"/><path d="M10 8l6 4-6 4z" fill="#fff"/></svg></span>' : ""}</div>` : ""}
     <div class="li-card__body">
       <span class="news-card__meta">${fmtDate(p.date)}LinkedIn</span>
-      <p>${p.text.split("\n").filter(Boolean).slice(0, 2).join(" — ").slice(0, 220)}</p>
+      <p>${p.text.split("\n").filter(Boolean).slice(0, 2).join(" ").slice(0, 220)}</p>
       <span class="news-card__more"><span data-i18n="li.view">View post</span> ${arrow(14)}</span>
     </div>
   </a>`;
@@ -672,13 +672,13 @@ ${famRow("linkedin", "ms.linkedin", "Latest from Schmoll Asia Pacific", LI.posts
 
 const MEDIA_HEAD = `<link rel="canonical" href="https://julianito03.github.io/schmoll-asia-modern/news.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Media — Schmoll Asia Pacific">
+<meta property="og:title" content="Media | Schmoll Asia Pacific">
 <meta property="og:description" content="Stories, technologies and people shaping advanced PCB manufacturing across Asia Pacific.">
 <meta property="og:image" content="https://julianito03.github.io/schmoll-asia-modern/${postThumb(heroPost)}">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify({
   "@context": "https://schema.org", "@type": "CollectionPage",
-  name: "Media — Schmoll Asia Pacific",
+  name: "Media | Schmoll Asia Pacific",
   description: "News, expert insights, videos and company stories from Schmoll Asia Pacific.",
   publisher: { "@type": "Organization", name: "Schmoll Asia Pacific" }
 })}</script>
@@ -793,21 +793,21 @@ const articlePage = (p, prev, next) => {
 
 /* ======================================================= MANIFEST */
 const PAGES = [
-  { file:"about.html",        title:"About — Schmoll Asia Pacific",                         desc:"German quality and innovation in PCB drilling and routing since 1996. 8 offices across 7 countries; 80 years of innovation.", main:about },
-  { file:"products.html",     title:"Products — Schmoll Asia Pacific",                      desc:"The full Schmoll machine lineup: Eagle, Hawk, Falcon, RMXY, Raptor, CombiDrill, MDI, XRA3, Automation and Probe Card.", main:productsPage },
-  { file:"applications.html", title:"Applications — Schmoll Asia Pacific",                  desc:"CCD, backdrilling, substrate, automation, fixture/probe card, X-ray, laser and EV PCB applications.", main:applicationsPage },
+  { file:"about.html",        title:"About | Schmoll Asia Pacific",                         desc:"German quality and innovation in PCB drilling and routing since 1996. 8 offices across 7 countries; 80 years of innovation.", main:about },
+  { file:"products.html",     title:"Products | Schmoll Asia Pacific",                      desc:"The full Schmoll machine lineup: Eagle, Hawk, Falcon, RMXY, Raptor, CombiDrill, MDI, XRA3, Automation and Probe Card.", main:productsPage },
+  { file:"applications.html", title:"Applications | Schmoll Asia Pacific",                  desc:"CCD, backdrilling, substrate, automation, fixture/probe card, X-ray, laser and EV PCB applications.", main:applicationsPage },
   // team.html is hand-maintained (CEO photo layout + globe.gl script) — edit site/team.html directly, like index.html
-  { file:"service.html",      title:"Service — Schmoll Asia Pacific",                       desc:"Maintenance, spare parts, repair and R&D services to keep your Schmoll machines at peak performance.", main:servicePage },
-  { file:"careers.html",      title:"Careers — Schmoll Asia Pacific",                       desc:"Start your career with Schmoll — a dynamic, innovative environment for growth.", main:careersPage },
-  { file:"contact.html",      title:"Contact — Schmoll Asia Pacific",                       desc:"Contact Schmoll Asia Pacific — 8 offices across 7 countries in Asia Pacific.", main:contactPage },
-  { file:"news.html",         title:"Media — Schmoll Asia Pacific",                         desc:"News, expert insights, videos and company stories from Schmoll Asia Pacific.", main:newsPage, head:MEDIA_HEAD, scripts:MEDIA_SCRIPTS }
+  { file:"service.html",      title:"Service | Schmoll Asia Pacific",                       desc:"Maintenance, spare parts, repair and R&D services to keep your Schmoll machines at peak performance.", main:servicePage },
+  { file:"careers.html",      title:"Careers | Schmoll Asia Pacific",                       desc:"Start your career with Schmoll, a dynamic, innovative environment for growth.", main:careersPage },
+  { file:"contact.html",      title:"Contact | Schmoll Asia Pacific",                       desc:"Contact Schmoll Asia Pacific: 8 offices across 7 countries in Asia Pacific.", main:contactPage },
+  { file:"news.html",         title:"Media | Schmoll Asia Pacific",                         desc:"News, expert insights, videos and company stories from Schmoll Asia Pacific.", main:newsPage, head:MEDIA_HEAD, scripts:MEDIA_SCRIPTS }
 ];
 
 // machine detail pages
 MACHINES.forEach((m, i) => {
   PAGES.push({
     file: `product-${m.key}.html`,
-    title: `${m.name} — Schmoll Asia Pacific`,
+    title: `${m.name} | Schmoll Asia Pacific`,
     desc: m.tagline.replace(/<[^>]+>/g, ""),
     main: productDetail(m, i)
   });
@@ -820,7 +820,7 @@ const withPages = sorted.filter((p) => postHref(p)).concat(retired.filter((p) =>
 withPages.forEach((p, i) => {
   PAGES.push({
     file: postHref(p),
-    title: `${p.title} — Schmoll Asia Pacific`,
+    title: `${p.title} | Schmoll Asia Pacific`,
     desc: excerptOf(p) || p.title,
     main: articlePage(p, withPages[i + 1], withPages[i - 1]),
     head: articleHead(p)
