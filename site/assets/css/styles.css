@@ -1334,3 +1334,9 @@ a.line:hover .line__v { color: var(--red); }
   .form__cols, .svc-near__list { grid-template-columns: 1fr; }
   .svc-near__list li:nth-child(odd) { border-right: 0; }
 }
+
+/* exhibitions: shows that are over stay listed, dimmed, below the upcoming ones */
+.exrow.is-past .exrow__date b, .exrow.is-past .exrow__name { color: var(--grey-500); }
+.exrow.is-past .exrow__date { border-left-color: rgba(255,255,255,.2); }
+.exrow.is-past .exrow__date i, .exrow.is-past .exrow__loc svg { color: var(--grey-500); }
+.exrow.is-past .exrow__full, .exrow.is-past .exrow__loc { color: var(--grey-500); }

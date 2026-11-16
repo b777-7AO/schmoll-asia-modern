@@ -56,6 +56,19 @@
     });
   });
 
+  /* ---------- Exhibitions: keep "Next up" on the next show by date ---------- */
+  (function () {
+    const list = document.querySelector(".exlist"); if (!list) return;
+    const today = new Date().toISOString().slice(0, 10);
+    const rows = Array.from(list.querySelectorAll(".exrow[data-end]"));
+    const flag = list.querySelector(".exrow__flag");
+    const up = rows.filter((r) => r.dataset.end >= today).sort((a, b) => a.dataset.end.localeCompare(b.dataset.end));
+    const past = rows.filter((r) => r.dataset.end < today).sort((a, b) => b.dataset.end.localeCompare(a.dataset.end));
+    up.concat(past).forEach((r) => list.appendChild(r));
+    rows.forEach((r) => r.classList.toggle("is-past", r.dataset.end < today));
+    if (flag) { if (up[0]) up[0].querySelector(".exrow__main").prepend(flag); else flag.remove(); }
+  })();
+
   /* ---------- Scroll reveal ---------- */
   if (location.search.indexOf("allvis")>-1) document.querySelectorAll("[data-reveal]").forEach(function(e){e.classList.add("is-visible")});
   const reveal = document.querySelectorAll("[data-reveal]");

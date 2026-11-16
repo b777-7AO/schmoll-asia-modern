@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 OUT = ROOT / "wp" / "dist"
 THEME = OUT / "schmoll-modern"
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 
 PACK_LIMIT = 8_200_000  # the browser upload tool takes at most 10 MB per file
 PACK = {}  # "img/..." or "brochures/..." -> pack number, filled by plan_packs()
