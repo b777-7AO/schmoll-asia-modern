@@ -2,3 +2,8 @@
 node_modules/
 *.log
 ops/linkedin-sync.log
+
+# WordPress build output and source PDFs
+wp/dist/
+wp/brochures/
+build/__pycache__/
