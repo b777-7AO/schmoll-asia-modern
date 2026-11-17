@@ -83,27 +83,34 @@
     reveal.forEach((el) => el.classList.add("is-visible"));
   }
 
-  /* ---------- History slider: node lighting + lazy image fade ---------- */
+  /* ---------- History storyline: arrows, drag, progress ---------- */
   const htl = document.querySelector(".htl");
   if (htl) {
-    // Fade images in as they lazy-load
-    htl.querySelectorAll(".htl__img").forEach((img) => {
-      if (img.complete && img.naturalWidth) img.classList.add("is-loaded");
-      else img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
-    });
-    // Light each milestone node as it crosses the activation line while scrubbing
     const items = Array.from(htl.querySelectorAll(".htl__item"));
+    const bar = document.querySelector(".htl-bar");
+    const btns = Array.from(document.querySelectorAll("[data-htl]"));
     let ticking = false;
     const update = () => {
       ticking = false;
-      const box = htl.getBoundingClientRect();
-      const line = box.left + box.width * 0.34;
+      const max = htl.scrollWidth - htl.clientWidth;
+      const p = max > 0 ? htl.scrollLeft / max : 1;
+      // the rail fills up to the milestone at the reading position
+      const line = htl.getBoundingClientRect().left + htl.clientWidth * (0.15 + 0.85 * p);
       items.forEach((it) => { it.classList.toggle("is-active", it.getBoundingClientRect().left <= line); });
+      if (bar) bar.style.setProperty("--p", (8 + 92 * p).toFixed(1) + "%");
+      btns.forEach((b) => { b.disabled = b.dataset.htl === "-1" ? htl.scrollLeft < 4 : htl.scrollLeft > max - 4; });
     };
     const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
+    btns.forEach((b) => b.addEventListener("click", () => {
+      htl.scrollBy({ left: +b.dataset.htl * items[0].offsetWidth * 2, behavior: "smooth" });
+    }));
+    // drag with the mouse; touch keeps native scrolling
+    let down = false, startX = 0, startLeft = 0, moved = false;
+    htl.addEventListener("pointerdown", (e) => { if (e.pointerType !== "mouse") return; down = true; moved = false; startX = e.clientX; startLeft = htl.scrollLeft; });
+    window.addEventListener("pointermove", (e) => { if (!down) return; const dx = e.clientX - startX; if (Math.abs(dx) > 4) { moved = true; htl.classList.add("is-drag"); } htl.scrollLeft = startLeft - dx; });
+    window.addEventListener("pointerup", () => { down = false; htl.classList.remove("is-drag"); });
     update();
     htl.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
   }
 
