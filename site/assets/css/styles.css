@@ -165,6 +165,25 @@ strong { color: var(--grey-900); font-weight: 700; }
 .logo-img { height: 58px; width: auto; max-width: none; display: block; flex: none; }
 .site-footer .logo-img { height: 54px; }
 @media (max-width: 480px){ .logo-img { height: 46px; } }
+/* Logo hover: the wordmark slides right and the 30-year anniversary mark builds up around it.
+   Sizes are in logo units: --k is one unit of the anniversary artwork (wordmark = 269 units high). */
+.logo__in { position: relative; display: block; --k: calc(58px / 269); transform-origin: 0 50%; transition: transform .75s cubic-bezier(.22,1,.36,1); }
+.logo-30 { position: absolute; max-width: none; opacity: 0; pointer-events: none; transition: opacity .4s ease, transform .75s cubic-bezier(.22,1,.36,1); }
+.logo-30--three { left: calc(-261.5 * var(--k)); top: calc(-26.1 * var(--k)); width: calc(170.3 * var(--k)); height: calc(218.1 * var(--k)); transform: translateX(-45%) rotate(-30deg) scale(.45); }
+.logo-30--arcs { left: calc(-98.9 * var(--k)); top: calc(-26.1 * var(--k)); width: calc(151.1 * var(--k)); height: calc(161.6 * var(--k)); transform: rotate(-140deg) scale(.55); }
+.logo-30--tag { left: calc(294.2 * var(--k)); top: calc(208.6 * var(--k)); width: calc(379.2 * var(--k)); height: calc(61.5 * var(--k)); transform: translateY(45%); }
+@media (hover: hover) and (min-width: 1000px) {
+  /* little room beside the logo: shrink so the whole anniversary mark fits the logo's own footprint */
+  .nav .logo:hover .logo__in, .nav .logo:focus-visible .logo__in, .nav .logo.is-30 .logo__in { transform: translateX(calc(262 * var(--k) * .72)) scale(.72); }
+  .nav .logo:hover .logo-30, .nav .logo:focus-visible .logo-30, .nav .logo.is-30 .logo-30 { opacity: 1; transform: none; }
+  .nav .logo:hover .logo-30--arcs, .nav .logo:focus-visible .logo-30--arcs { transition-delay: .1s; }
+  .nav .logo:hover .logo-30--tag, .nav .logo:focus-visible .logo-30--tag { transition-delay: .24s; }
+}
+/* wide screens have free space left of the logo: the wordmark stays put and the 30 appears beside it */
+@media (hover: hover) and (min-width: 1380px) {
+  .nav .logo:hover .logo__in, .nav .logo:focus-visible .logo__in, .nav .logo.is-30 .logo__in { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .logo__in, .logo-30 { transition: opacity .2s ease; } .logo-30 { transform: none; } }
 .logo__word { font-family: var(--font-display); text-transform: lowercase; font-weight: 500; font-size: 1.2rem; letter-spacing: .05em; color: var(--grey-700); line-height: 1; white-space: nowrap; }
 .logo__fid { width: 22px; height: 34px; flex: none; }
 .site-footer .logo__word { color: #e8e8e8; }
@@ -352,7 +371,7 @@ strong { color: var(--grey-900); font-weight: 700; }
 .exrow__link:hover::before, .exrow__link:focus-visible::before { transform: scaleX(1); }
 
 .exrow__date { display: flex; flex-direction: column; align-items: flex-start; line-height: 1; border-left: 2px solid var(--red); padding-left: 16px; }
-.exrow__date b { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.5rem, 2.4vw, 2.1rem); letter-spacing: -.01em; color: #fff; }
+.exrow__date b { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.4rem, 2.2vw, 1.9rem); letter-spacing: -.01em; color: #fff; white-space: nowrap; }
 .exrow__date i { font-family: var(--font-mono); font-style: normal; text-transform: uppercase; font-size: .72rem; letter-spacing: .22em; color: var(--red); margin-top: 8px; }
 
 .exrow__main { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
